@@ -20,4 +20,5 @@ algumas anotações:
 
 - Scroll dentro do aplicativo
 
-- Imagem de celular que aparee apenas no desktop
+- Mockup do celular:
+        -> Ele está mt grande kk

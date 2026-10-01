@@ -5,6 +5,7 @@ function AppLayout() {
         <div className="
         flex
         justify-center
+        p-7
         ">
             <div className="
         relative
