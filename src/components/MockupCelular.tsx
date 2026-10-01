@@ -11,6 +11,14 @@ function MockupCelular(){
         overflow-hidden
         shadow-2xl
         ">
+            <div className="
+            bg-white
+            w-full
+            h-full
+            overflow-hidden
+            ">
+            </div>
+
         </div>
     )
 }
