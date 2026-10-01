@@ -8,7 +8,7 @@ import Integrantes from "./pages/Integrantes"
 import Faq from "./pages/Faq"
 import Contato from "./pages/Contato"
 import Integrante from "./pages/Integrante"
-import SmInicio from "./pages/SmInicio"
+import SmInicio from "./pages/app/SmInicio"
 
 function App() {
   return (
