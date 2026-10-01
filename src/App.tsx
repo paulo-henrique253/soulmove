@@ -8,7 +8,7 @@ import Integrantes from "./pages/Integrantes"
 import Faq from "./pages/Faq"
 import Contato from "./pages/Contato"
 import Integrante from "./pages/Integrante"
-import SmCarteira from "./pages/SmCarteira"
+import SmCarteira from "./pages/SmInicio"
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Route index element={<Index />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/funcionalidades" element={<Funcionalidades />} />
-        <Route path="/aplicacao" element={<SmCarteira />} />
+        <Route path="/aplicacao" element={<SmInicio />} />
         <Route path="roadmap" element={<Roadmap />} />
         <Route path="/integrantes" element={<Integrantes />} />
         <Route path="/integrantes/:slug" element={<Integrante />} />
