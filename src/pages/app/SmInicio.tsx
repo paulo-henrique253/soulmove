@@ -1,6 +1,6 @@
 function SmInicio () {
     return (
-    <p>oi</p>
+    <p>Início</p>
     )
 }
 
