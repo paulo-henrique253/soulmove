@@ -1,26 +1,27 @@
-function MockupCelular(){
-    return(
+import { Outlet } from "react-router";
+
+function AppLayout() {
+    return (
         <div className="
+        flex
+        justify-center
+        ">
+            <div className="
         relative
         w-97.5
         h-211
         rounded-[45px]
         border-10
         border-black
-        bg-black
+        bg-white
         overflow-hidden
         shadow-2xl
         ">
-            <div className="
-            bg-white
-            w-full
-            h-full
-            overflow-hidden
-            ">
+            <Outlet/>          
             </div>
+
 
         </div>
     )
 }
-
-export default MockupCelular
+export default AppLayout;

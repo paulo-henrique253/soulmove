@@ -16,7 +16,9 @@ const estilosLink = `
 
 function SmInicio () {
     return (
-        <article>
+        <article className="
+        grid
+        ">
             <Link to="/appCalculadora" className={estilosLink}>
                 Calculadora
             </Link>
