@@ -77,7 +77,7 @@ function MenuNavegacao({ trocarMenu }: MenuNavegacaoProps) {
                 Como Funciona
             </Link>
 
-            <Link to="/aplicacao" className={estilosLink}>
+            <Link to="/appInicio" className={estilosLink}>
                 Nossa Aplicação
             </Link>
 
