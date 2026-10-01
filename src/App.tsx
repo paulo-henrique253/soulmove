@@ -37,7 +37,7 @@ function App() {
         <Route path="/appMissoes/:slug" element={<SmMissao />} />
         <Route path="/appPerfil" element={<SmPerfil />} />
         <Route path="/appRecarga" element={<SmRecarga />} />
-        <Route path="/appCarteira" element={<SmConquistas />} />
+        <Route path="/appConquistas" element={<SmConquistas />} />
       </Route>
     </Routes>
   )
