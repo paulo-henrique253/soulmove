@@ -9,27 +9,27 @@ function SmCarteira() {
         <>
             <p>Carteira</p>
 
-            <Carteira/>
+            <Carteira  icone="Icone do olinho aq" altIcon="Pictograma de olho"  imagem="Imagem da soulmove carteira aqui" altImg="Imagem da SoulUp na carteira."/>
 
             <div className="flex gap-1">
-                <BotaoBola imagem= "img" descricao="Sacar via PIX"/>
-                <BotaoBola imagem= "img" descricao="Resgatar Vale Energia"/>
-                <BotaoBola imagem= "img" descricao="Pagar conta de luz"/>
-                <BotaoBola imagem= "img" descricao="Acessar a SoulMove"/>
+                <BotaoBola imagem= "img" descricao="Sacar via PIX" alt="Pictograma do PIX"/>
+                <BotaoBola imagem= "img" descricao="Resgatar Vale Energia" alt="Pictograma de lâmpada"/>
+                <BotaoBola imagem= "img" descricao="Pagar conta de luz" alt="Pictograma de raio"/>
+                <BotaoBola imagem= "img" descricao="Acessar a SoulMove" alt="Pictograma da SoulMove"/>
             </div>
 
-            <Notificacao texto="Você tem 2 missões de mobilidade hoje!"/>
-
+            <Notificacao texto="Você tem 2 missões de mobilidade hoje!" imagem="" alt="Mini logo da SoulMove"/>
+ 
             <div>
-                <Stories imagem="AD"/>
-                <Stories imagem="Sabour"/>
-                <Stories imagem="Sabour"/>
-                <Stories imagem="Sabour"/>
+                <Stories imagem="AD" alt="Imagem dos anúncios"/>
+                <Stories imagem="Sabour" alt="Placeholder usuário"/>
+                <Stories imagem="Sabour" alt="Placeholder usuário"/>
+                <Stories imagem="Sabour" alt="Placeholder usuário"/>
             </div>
 
-            <Postagem icon="zenix" alt="oi" usuario="zenix" tempo="a 67 minutos" imagem="/src/assets/zeni.png"/>
-            <Postagem icon="zenix" alt="oi" usuario="zenix" tempo="a 67 minutos" imagem="/src/assets/zeni.png"/>
-            <Postagem icon="zenix" alt="oi" usuario="zenix" tempo="a 67 minutos" imagem="/src/assets/zeni.png"/>
+            <Postagem icon="zenix" altIcon="Icone do usuário" usuario="zenix" tempo="a 67 minutos" imagem="/src/assets/zeni.png" altImg="Imagem da postagem"/>
+            <Postagem icon="zenix" altIcon="Icone do usuário" usuario="zenix" tempo="a 67 minutos" imagem="/src/assets/zeni.png" altImg="Imagem da postagem"/>
+            <Postagem icon="zenix" altIcon="Icone do usuário" usuario="zenix" tempo="a 67 minutos" imagem="/src/assets/zeni.png" altImg="Imagem da postagem"/>
         </>
 
     )

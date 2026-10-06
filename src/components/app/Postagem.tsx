@@ -1,20 +1,21 @@
 type PostagemProps = {
     icon: string
-    alt: string
+    altIcon: string
     usuario: string
     tempo: string
     imagem: string
+    altImg: string
 }
 
-function Postagem( {icon, alt, usuario, tempo, imagem}: PostagemProps) {
+function Postagem( {icon, altIcon, usuario, tempo, imagem, altImg}: PostagemProps) {
     return (
         <>
         <div>
-            <img src={icon} alt={alt}/>
+            <img src={icon} alt={altIcon}/>
             <p>{usuario}</p>
             <p>{tempo}</p>
         </div> 
-        <img src={imagem} alt="" />
+        <img src={imagem} alt={altImg} />
         </>   
     );
 }

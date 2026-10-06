@@ -1,11 +1,13 @@
 type SaldoProps = {
+    saldo: number
+    descricao: string
 }
 
-function Saldo( {}: SaldoProps) {
+function Saldo( {saldo, descricao}: SaldoProps) {
     return (
         <>
-            <h2>r$ saldo aq</h2>
-            <p>descricao aq</p>    
+            <h2>{saldo}</h2>
+            <p>{descricao}</p>    
         </>   
     );
 }
