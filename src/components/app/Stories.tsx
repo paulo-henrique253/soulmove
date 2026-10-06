@@ -1,13 +1,13 @@
 type StoriesProps = {
     imagem: string
+    alt: string
 }
 
-function Stories( {imagem}: StoriesProps) {
+function Stories( {imagem, alt}: StoriesProps) {
     return (
         <div className="border-2">
-            {imagem}
+            <img src={imagem} alt={alt} />
         </div>
-
     );
 }
 

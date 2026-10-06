@@ -1,15 +1,20 @@
+import { Link } from "react-router";
+
+
 type BotaoBolaProps = {
     imagem: string
+    diretorio: string
     descricao: string
+    alt: string
 }
 
-function BotaoBola( { imagem, descricao }: BotaoBolaProps) {
+function BotaoBola( { imagem, diretorio, descricao, alt }: BotaoBolaProps) {
     return (
         <>
-            <div>
-                {imagem}
-            </div>
-            <p>{descricao}</p>  
+            <Link to={diretorio} className="">
+                <img src={imagem} alt={alt} />
+                {descricao}
+            </Link>
         </>   
     );
 }

@@ -1,38 +1,56 @@
-import BotaoBola from "../../components/app/BotaoBola"
-import Carteira from "../../components/app/Carteira"
-import Notificacao from "../../components/app/Notificacao"
-import Postagem from "../../components/app/Postagem"
-import Stories from "../../components/app/Stories"
+import BotaoBola from "../../components/app/BotaoBola";
+import Saldo from "../../components/app/Saldo";
+import SessaoCarteira from "../../components/app/SessaoCarteira";
 
 function SmCarteira() {
     return (
+        
         <>
-            <p>Carteira</p>
-
-            <Carteira/>
-
-            <div className="flex gap-1">
-                <BotaoBola imagem= "img" descricao="Sacar via PIX"/>
-                <BotaoBola imagem= "img" descricao="Resgatar Vale Energia"/>
-                <BotaoBola imagem= "img" descricao="Pagar conta de luz"/>
-                <BotaoBola imagem= "img" descricao="Acessar a SoulMove"/>
+        <div>
+            <div>
+                <img src="" alt="" />
+                <h1>pontos</h1>
+                <img src="" alt="" />
             </div>
-
-            <Notificacao texto="Você tem 2 missões de mobilidade hoje!"/>
 
             <div>
-                <Stories imagem="AD"/>
-                <Stories imagem="Sabour"/>
-                <Stories imagem="Sabour"/>
-                <Stories imagem="Sabour"/>
+                <p>Extrato</p>
+                <img src="" alt="" />
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <p>Saldo</p>
+                <img src="" alt="" />
             </div>
 
-            <Postagem icon="zenix" alt="oi" usuario="zenix" tempo="a 67 minutos" imagem="/src/assets/zeni.png"/>
-            <Postagem icon="zenix" alt="oi" usuario="zenix" tempo="a 67 minutos" imagem="/src/assets/zeni.png"/>
-            <Postagem icon="zenix" alt="oi" usuario="zenix" tempo="a 67 minutos" imagem="/src/assets/zeni.png"/>
-        </>
+            <div>
+                <p>Entenda o saldo</p>
+                <img src="" alt="" />
+            </div>
 
-    )
+            <Saldo saldo= {0.46} descricao="Em desconto na conta de energia."/>
+            <Saldo saldo= {0.46} descricao="Em desconto no transporte público."/>
+        </div>
+
+        <article>
+            <div>
+                <BotaoBola imagem="pix" diretorio="#" descricao="Sacar via PIX" alt="Pictograma PIX."/>
+                <BotaoBola imagem="recarga" diretorio="/appRecarga" descricao="Recarregar Bilhete" alt="Pictograma SoulMove."/>
+                <BotaoBola imagem="conta de luz" diretorio="#" descricao="Pagar conta de luz" alt="Pictograma Raio."/>
+                <BotaoBola imagem="vale-energia" diretorio="#" descricao="Resgate Vale-Energia" alt="Pictograma Moeda."/>
+            </div>
+
+            <h2>Meus Valores</h2>
+
+            <SessaoCarteira icone="files" alt="Pictograma de documento." titulo="Acompanhamentos" descricao="Seus saques e cupons em andamento"/>
+            <SessaoCarteira icone="raio" alt="Pictograma de raio." titulo="Vale-Energia" descricao="Valor do desconto na conta de Luz"/>
+            <SessaoCarteira icone="files" alt="Pictograma de documento." titulo="Cupons Fiscais" descricao="A cada cupom enviado você ganha +5 pontos"/>
+            <SessaoCarteira icone="moeda" alt="Pictograma de moeda." titulo="Contas Pagas" descricao="Seu histórico de contas pagas"/>
+        </article>
+        </>
+    );
 }
 
 export default SmCarteira
