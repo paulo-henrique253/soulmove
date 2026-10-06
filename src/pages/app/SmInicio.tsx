@@ -54,10 +54,10 @@ function SmInicio () {
             <Carteira  icone="Icone do olinho aq" altIcon="Pictograma de olho"  imagem="Imagem da soulmove carteira aqui" altImg="Imagem da SoulUp na carteira."/>
 
             <div className="flex gap-1">
-                <BotaoBola imagem= "img" descricao="Sacar via PIX" alt="Pictograma do PIX"/>
-                <BotaoBola imagem= "img" descricao="Resgatar Vale Energia" alt="Pictograma de lâmpada"/>
-                <BotaoBola imagem= "img" descricao="Pagar conta de luz" alt="Pictograma de raio"/>
-                <BotaoBola imagem= "img" descricao="Acessar a SoulMove" alt="Pictograma da SoulMove"/>
+                <BotaoBola imagem= "img" diretorio="#" descricao="Sacar via PIX" alt="Pictograma do PIX"/>
+                <BotaoBola imagem= "img" diretorio="#" descricao="Resgatar Vale Energia" alt="Pictograma de lâmpada"/>
+                <BotaoBola imagem= "img" diretorio="#" descricao="Pagar conta de luz" alt="Pictograma de raio"/>
+                <BotaoBola imagem= "img" diretorio="/appMissoes" descricao="Acessar a SoulMove" alt="Pictograma da SoulMove"/>
             </div>
 
             <Notificacao texto="Você tem 2 missões de mobilidade hoje!" imagem="" alt="Mini logo da SoulMove"/>
