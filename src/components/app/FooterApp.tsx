@@ -1,9 +1,6 @@
 import { Link } from "react-router";
 
-type FooterAppProps = {
-}
-
-function FooterApp( {}: FooterAppProps) {
+function FooterApp() {
     return (
         <footer>
             <Link to="/appInicio">
