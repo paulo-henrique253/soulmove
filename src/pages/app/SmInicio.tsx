@@ -6,6 +6,7 @@ import Notificacao from "../../components/app/Notificacao"
 import Postagem from "../../components/app/Postagem"
 import Stories from "../../components/app/Stories"
 import HeaderApp from "../../components/app/HeaderApp";
+import FooterApp from "../../components/app/FooterApp";
 
 const estilosLink = `
         font-['Momo_Trust_Display']
@@ -75,6 +76,8 @@ function SmInicio () {
             <Postagem icon="zenix" altIcon="Icone do usuário" usuario="zenix" tempo="a 67 minutos" imagem="/src/assets/zeni.png" altImg="Imagem da postagem"/>
             <Postagem icon="zenix" altIcon="Icone do usuário" usuario="zenix" tempo="a 67 minutos" imagem="/src/assets/zeni.png" altImg="Imagem da postagem"/>
             <Postagem icon="zenix" altIcon="Icone do usuário" usuario="zenix" tempo="a 67 minutos" imagem="/src/assets/zeni.png" altImg="Imagem da postagem"/>
+
+            <FooterApp/>
         </article>
     )
 }
