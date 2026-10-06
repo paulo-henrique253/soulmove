@@ -29,6 +29,8 @@ function SmInicio () {
 
             <HeaderApp pontos={100} icone="icone aqui"/>
 
+            {/* RETIRAR DEPOIS */}
+
             <Link to="/appCalculadora" className={estilosLink}>
                 Calculadora
             </Link>
@@ -53,7 +55,7 @@ function SmInicio () {
                 Recarga
             </Link>
 
-            <p>Carteira</p>
+            {/* RETIRAR DEPOIS */}
 
             <Carteira  icone="Icone do olinho aq" altIcon="Pictograma de olho"  imagem="Imagem da soulmove carteira aqui" altImg="Imagem da SoulUp na carteira."/>
 
