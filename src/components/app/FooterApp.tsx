@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 function FooterApp() {
     return (
-        <footer className="flex gap-7">
+        <footer className="flex gap-7 bg-white p-1 align-center justify-center">
             <Link to="/appInicio">
                 <img src="/src/assets/homeicon.png" alt="Pictograma de casa." className="w-10"/>
             </Link>
