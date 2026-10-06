@@ -69,10 +69,10 @@ function SmInicio () {
             <Notificacao texto="Você tem 2 missões de mobilidade hoje!" imagem="" alt="Mini logo da SoulMove"/>
  
             <div>
-                <Stories imagem="AD" alt="Imagem dos anúncios"/>
-                <Stories imagem="Sabour" alt="Placeholder usuário"/>
-                <Stories imagem="Sabour" alt="Placeholder usuário"/>
-                <Stories imagem="Sabour" alt="Placeholder usuário"/>
+                <Stories imagem="/src/assets/userpfp.png" alt="Imagem dos anúncios"/>
+                <Stories imagem="/src/assets/userpfp.png" alt="Placeholder usuário"/>
+                <Stories imagem="/src/assets/userpfp.png" alt="Placeholder usuário"/>
+                <Stories imagem="/src/assets/userpfp.png" alt="Placeholder usuário"/>
             </div>
 
             <Postagem icon="zenix" altIcon="Icone do usuário" usuario="zenix" tempo="a 67 minutos" imagem="/src/assets/zeni.png" altImg="Imagem da postagem"/>
