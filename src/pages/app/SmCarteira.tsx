@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import BotaoBola from "../../components/app/BotaoBola";
 import Saldo from "../../components/app/Saldo";
 import SessaoCarteira from "../../components/app/SessaoCarteira";
@@ -8,26 +9,28 @@ function SmCarteira() {
         <>
         <div>
             <div>
-                <img src="" alt="" />
+                <Link to="/appInicio">
+                <img src="setinha" alt="Seta para voltar." />
+                </Link>
                 <h1>pontos</h1>
-                <img src="" alt="" />
+                <img src="moeda" alt="Icone de moeda." />
             </div>
 
             <div>
                 <p>Extrato</p>
-                <img src="" alt="" />
+                <img src="documentinho" alt="Pictograma de documento." />
             </div>
         </div>
 
         <div>
             <div>
                 <p>Saldo</p>
-                <img src="" alt="" />
+                <button><img src="olho" alt="Pictograma de olho" /></button>
             </div>
 
             <div>
                 <p>Entenda o saldo</p>
-                <img src="" alt="" />
+                <img src="setinha" alt="Seta para a direita." />
             </div>
 
             <Saldo saldo= {0.46} descricao="Em desconto na conta de energia."/>
