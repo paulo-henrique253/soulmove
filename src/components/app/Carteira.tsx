@@ -1,4 +1,5 @@
 import Saldo from "./Saldo";
+import { Link } from "react-router";
 
 type CarteiraProps = {
     icone: string
@@ -19,7 +20,7 @@ function Carteira( {icone, altIcon, imagem, altImg}: CarteiraProps) {
         <Saldo saldo= {0.46} descricao="Em desconto na conta de energia."/>
         <Saldo saldo= {0.46} descricao="Em desconto no transporte público."/>
 
-        <a href="">Acessar carteira</a>
+        <Link to="/appCarteira" className="">Acesse a Carteira</Link>
 
         <img src={imagem} alt={altImg} />
 
