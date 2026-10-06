@@ -8,7 +8,7 @@ function SmMissoes() {
     return (
 
         <>
-        <HeaderApp pontos={100} icone="icone aqui"/>
+        <HeaderApp/>
         <AreaSm/>
 
         <Notificacao texto="Você tem 2 missões diárias disponíveis!" imagem="sabor" alt="legenda sabor"/>

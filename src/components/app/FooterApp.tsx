@@ -2,15 +2,15 @@ import { Link } from "react-router";
 
 function FooterApp() {
     return (
-        <footer>
+        <footer className="flex gap-7">
             <Link to="/appInicio">
-                <img src="home" alt="Pictograma de casa." />
+                <img src="/src/assets/homeicon.png" alt="Pictograma de casa." className="w-10"/>
             </Link>
 
-            <img src="comunidade" alt="Pictograma de pessoas." />
-            <button>+</button>
-            <img src="stories" alt="Pictograma de play." />
-            <img src="mensagens" alt="Pictograma de batao de fala." />
+            <img src="/src/assets/comunidadeicon.png" alt="Pictograma de pessoas." className="w-10"/>
+            <button className="text-2xl text-white bg-indigo-500 px-5 rounded-2xl ">+</button>
+            <img src="/src/assets/videosicon.png" alt="Pictograma de play." className="w-10"/>
+            <img src="/src/assets/msgicon.png" alt="Pictograma de batao de fala." className="w-10"/>
         </footer>
     );
 }

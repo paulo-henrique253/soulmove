@@ -27,7 +27,7 @@ function SmInicio () {
         grid
         ">
 
-            <HeaderApp pontos={100} icone="icone aqui"/>
+            <HeaderApp/>
 
             {/* RETIRAR DEPOIS */}
 
