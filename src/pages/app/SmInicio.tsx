@@ -5,7 +5,7 @@ import Carteira from "../../components/app/Carteira"
 import Notificacao from "../../components/app/Notificacao"
 import Postagem from "../../components/app/Postagem"
 import Stories from "../../components/app/Stories"
-
+import HeaderApp from "../../components/app/HeaderApp";
 
 const estilosLink = `
         font-['Momo_Trust_Display']
@@ -25,6 +25,9 @@ function SmInicio () {
         <article className="
         grid
         ">
+
+            <HeaderApp pontos={100} icone="icone aqui"/>
+
             <Link to="/appCalculadora" className={estilosLink}>
                 Calculadora
             </Link>
