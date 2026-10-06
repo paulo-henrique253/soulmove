@@ -34,7 +34,6 @@ function MenuNavegacao({ trocarMenu }: MenuNavegacaoProps) {
                 gap-8
                 p-5
                bg-indigo-500/80
-                hidden
 
                 md:static
                 md:flex-row
