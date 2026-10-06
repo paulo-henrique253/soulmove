@@ -8,7 +8,15 @@ import Integrantes from "./pages/Integrantes"
 import Faq from "./pages/Faq"
 import Contato from "./pages/Contato"
 import Integrante from "./pages/Integrante"
-import SmCarteira from "./pages/SmCarteira"
+import SmInicio from "./pages/app/SmInicio"
+import SmCalculadora from "./pages/app/SmCalculadora"
+import SmCarteira from "./pages/app/SmCarteira"
+import SmMissoes from "./pages/app/SmMissoes"
+import SmMissao from "./pages/app/SmMissao"
+import SmPerfil from "./pages/app/SmPerfil"
+import SmRecarga from "./pages/app/SmRecarga"
+import SmConquistas from "./pages/app/SmConquistas"
+import AppLayout from "./layouts/AppLayout"
 
 function App() {
   return (
@@ -17,12 +25,22 @@ function App() {
         <Route index element={<Index />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/funcionalidades" element={<Funcionalidades />} />
-        <Route path="/aplicacao" element={<SmCarteira />} />
         <Route path="roadmap" element={<Roadmap />} />
         <Route path="/integrantes" element={<Integrantes />} />
         <Route path="/integrantes/:slug" element={<Integrante />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/faq" element={<Faq />} />
+
+        <Route element={<AppLayout />}>
+          <Route path="/appInicio" element={<SmInicio />} />
+          <Route path="/appCalculadora" element={<SmCalculadora />} />
+          <Route path="/appCarteira" element={<SmCarteira />} />
+          <Route path="/appMissoes" element={<SmMissoes />} />
+          <Route path="/appMissoes/:slug" element={<SmMissao />} />
+          <Route path="/appPerfil" element={<SmPerfil />} />
+          <Route path="/appRecarga" element={<SmRecarga />} />
+          <Route path="/appConquistas" element={<SmConquistas />} />
+        </Route>
       </Route>
     </Routes>
   )
