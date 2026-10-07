@@ -10,12 +10,12 @@ type BotaoBolaProps = {
 
 function BotaoBola( { imagem, diretorio, descricao, alt }: BotaoBolaProps) {
     return (
-        <>
-            <Link to={diretorio} className="">
-                <img src={imagem} alt={alt} />
-                {descricao}
+        <div className="">
+            <Link to={diretorio} className="flex flex-col justify-center align-center items-center">
+                <img src={imagem} alt={alt} className="w-15 rounded-4xl bg-indigo-500 p-3"/>
+                <p className="text-center text-xs font-bold">{descricao}</p>
             </Link>
-        </>   
+        </div>   
     );
 }
 
