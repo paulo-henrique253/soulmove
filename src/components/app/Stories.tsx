@@ -5,9 +5,7 @@ type StoriesProps = {
 
 function Stories( {imagem, alt}: StoriesProps) {
     return (
-        <div className="border-2">
-            <img src={imagem} alt={alt} />
-        </div>
+        <img src={imagem} alt={alt} className="w-16 border-3 rounded-4xl border-indigo-500"/>
     );
 }
 
