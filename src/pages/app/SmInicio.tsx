@@ -14,13 +14,15 @@ function SmInicio () {
 
             <HeaderApp/>
             
-            <Carteira/>
+            <div className="bg-gray-100 -mx-4 p-5 border-gray-300 border-t-2">
+                <Carteira />
 
-            <div className="flex gap-1 justify-center items-center">
-                <BotaoBola imagem= "/src/assets/pixicon.png" diretorio="#" descricao="Sacar via PIX" alt="Pictograma do PIX"/>
-                <BotaoBola imagem= "/src/assets/lampadaicon.png" diretorio="#" descricao="Resgatar Vale Energia" alt="Pictograma de lâmpada"/>
-                <BotaoBola imagem= "/src/assets/raiopicon.png" diretorio="#" descricao="Pagar conta de luz" alt="Pictograma de raio"/>
-                <BotaoBola imagem= "/src/assets/smicon.png" diretorio="/appMissoes" descricao="Acessar a SoulMove" alt="Pictograma da SoulMove"/>
+                <div className="flex gap-1 justify-center items-center">
+                    <BotaoBola imagem="/src/assets/pixicon.png" diretorio="#" descricao="Sacar via PIX" alt="Pictograma do PIX" />
+                    <BotaoBola imagem="/src/assets/lampadaicon.png" diretorio="#" descricao="Resgatar Vale Energia" alt="Pictograma de lâmpada" />
+                    <BotaoBola imagem="/src/assets/raiopicon.png" diretorio="#" descricao="Pagar conta de luz" alt="Pictograma de raio" />
+                    <BotaoBola imagem="/src/assets/smicon.png" diretorio="/appMissoes" descricao="Acessar a SoulMove" alt="Pictograma da SoulMove" />
+                </div>
             </div>
 
             <Notificacao texto="Você tem 2 missões de mobilidade hoje!" imagem="/src/assets/smicon.png" alt="Mini logo da SoulMove"/>
