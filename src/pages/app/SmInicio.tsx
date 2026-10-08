@@ -29,34 +29,6 @@ function SmInicio () {
 
             <HeaderApp/>
 
-            {/* RETIRAR DEPOIS */}
-
-            <Link to="/appCalculadora" className={estilosLink}>
-                Calculadora
-            </Link>
-
-            <Link to="/appCarteira" className={estilosLink}>
-                Carteira
-            </Link>
-
-            <Link to="/appConquistas" className={estilosLink}>
-                Conquistas
-            </Link>
-
-            <Link to="/appMissoes" className={estilosLink}>
-                Missoes
-            </Link>
-
-            <Link to="/appPerfil" className={estilosLink}>
-                Perfil
-            </Link>
-
-            <Link to="/appRecarga" className={estilosLink}>
-                Recarga
-            </Link>
-
-            {/* RETIRAR DEPOIS */}
-
             <Carteira  icone="Icone do olinho aq" altIcon="Pictograma de olho"  imagem="Imagem da soulmove carteira aqui" altImg="Imagem da SoulUp na carteira."/>
 
             <div className="flex gap-1 justify-center items-center">
@@ -75,10 +47,8 @@ function SmInicio () {
                 <Stories imagem="/src/assets/userpfp.png" alt="Placeholder usuário"/>
             </div>
 
-            <Postagem icon="zenix" altIcon="Icone do usuário" usuario="zenix" tempo="a 67 minutos" imagem="/src/assets/zeni.png" altImg="Imagem da postagem"/>
-            <Postagem icon="zenix" altIcon="Icone do usuário" usuario="zenix" tempo="a 67 minutos" imagem="/src/assets/zeni.png" altImg="Imagem da postagem"/>
-            <Postagem icon="zenix" altIcon="Icone do usuário" usuario="zenix" tempo="a 67 minutos" imagem="/src/assets/zeni.png" altImg="Imagem da postagem"/>
-
+            <Postagem icon="/src/assets/smpfp.png" usuario="SoulMove" tempo="há 1 minuto" imagem="/src/assets/post1.png"/>
+        
             <FooterApp/>
         </article>
     )
