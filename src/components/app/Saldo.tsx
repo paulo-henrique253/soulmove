@@ -5,10 +5,10 @@ type SaldoProps = {
 
 function Saldo( {saldo, descricao}: SaldoProps) {
     return (
-        <>
-            <h2>{saldo}</h2>
-            <p>{descricao}</p>    
-        </>   
+        <article className="grid">
+            <h2 className="font-[Lexend_Deca] text-2xl">R${saldo}</h2>
+            <p className="font-[Lexend_Deca] text-[0.6rem] max-w-25">{descricao}</p>    
+        </article>   
     );
 }
 

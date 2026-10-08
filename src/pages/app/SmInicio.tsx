@@ -13,8 +13,8 @@ function SmInicio () {
         ">
 
             <HeaderApp/>
-
-            <Carteira icone="/src/assets/iconolho.png" altIcon="Pictograma de olho" imagem="/src/assets/logosu.png" altImg="Imagem da SoulUp na carteira."/>
+            
+            <Carteira/>
 
             <div className="flex gap-1 justify-center items-center">
                 <BotaoBola imagem= "/src/assets/pixicon.png" diretorio="#" descricao="Sacar via PIX" alt="Pictograma do PIX"/>
