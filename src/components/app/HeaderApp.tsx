@@ -1,21 +1,16 @@
-type HeaderAppProps = {
-    pontos: number
-    icone: string
-}
-
-function HeaderApp( {pontos, icone}: HeaderAppProps) {
+function HeaderApp() {
     return (
-        <header>
-            <div>
-                <img src="imagem carteira" alt="Pictograma de carteira." />
-                <p>{pontos}Pts</p>
-                <img src="sacolinha" alt="Pictograma de sacola." />
+        <header className="flex gap-30 bg-white p-1 align-center justify-center">
+            <div className="flex">
+                <img src="/src/assets/carteiraicon.png" alt="Pictograma de carteira." className="w-7 h-7"/>
+                <p>100Pts</p>
+                <img src="/src/assets/sacolinhaicon.png" alt="Pictograma de sacola." className="w-7 h-7"/>
             </div>
 
-            <div>
-                <img src="lupa" alt="Pictograma de lupa." />
-                <img src="foguinho" alt="Pictograma de fogo." />
-                <img src={icone} alt="Icone do usuário." />
+            <div className="flex">
+                <img src="/src/assets/lupa.png" alt="Pictograma de lupa." className="w-7 h-7"/>
+                <img src="/src/assets/foguinho.png" alt="Pictograma de fogo." className="w-8 h-8"/>
+                <img src="/src/assets/userpfp.png" alt="Icone do usuário." className="w-12 h-12"/>
             </div>
         </header>  
     );

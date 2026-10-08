@@ -18,7 +18,10 @@ function AppLayout() {
         overflow-hidden
         shadow-2xl
         ">
-            <Outlet/>          
+            <div className="h-full w-full overflow-y-auto overflow-x-hidden scrollbar-hide p-4">
+                <Outlet/> 
+            </div>
+         
             </div>
 
 

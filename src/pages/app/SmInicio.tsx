@@ -27,7 +27,7 @@ function SmInicio () {
         grid
         ">
 
-            <HeaderApp pontos={100} icone="icone aqui"/>
+            <HeaderApp/>
 
             {/* RETIRAR DEPOIS */}
 
@@ -59,20 +59,20 @@ function SmInicio () {
 
             <Carteira  icone="Icone do olinho aq" altIcon="Pictograma de olho"  imagem="Imagem da soulmove carteira aqui" altImg="Imagem da SoulUp na carteira."/>
 
-            <div className="flex gap-1">
-                <BotaoBola imagem= "img" diretorio="#" descricao="Sacar via PIX" alt="Pictograma do PIX"/>
-                <BotaoBola imagem= "img" diretorio="#" descricao="Resgatar Vale Energia" alt="Pictograma de lâmpada"/>
-                <BotaoBola imagem= "img" diretorio="#" descricao="Pagar conta de luz" alt="Pictograma de raio"/>
-                <BotaoBola imagem= "img" diretorio="/appMissoes" descricao="Acessar a SoulMove" alt="Pictograma da SoulMove"/>
+            <div className="flex gap-1 justify-center items-center">
+                <BotaoBola imagem= "/src/assets/pixicon.png" diretorio="#" descricao="Sacar via PIX" alt="Pictograma do PIX"/>
+                <BotaoBola imagem= "/src/assets/lampadaicon.png" diretorio="#" descricao="Resgatar Vale Energia" alt="Pictograma de lâmpada"/>
+                <BotaoBola imagem= "/src/assets/raiopicon.png" diretorio="#" descricao="Pagar conta de luz" alt="Pictograma de raio"/>
+                <BotaoBola imagem= "/src/assets/smicon.png" diretorio="/appMissoes" descricao="Acessar a SoulMove" alt="Pictograma da SoulMove"/>
             </div>
 
             <Notificacao texto="Você tem 2 missões de mobilidade hoje!" imagem="" alt="Mini logo da SoulMove"/>
  
-            <div>
-                <Stories imagem="AD" alt="Imagem dos anúncios"/>
-                <Stories imagem="Sabour" alt="Placeholder usuário"/>
-                <Stories imagem="Sabour" alt="Placeholder usuário"/>
-                <Stories imagem="Sabour" alt="Placeholder usuário"/>
+            <div className="flex gap-5 justify-center">
+                <Stories imagem="/src/assets/ads.png" alt="Imagem dos anúncios"/>
+                <Stories imagem="/src/assets/userpfp.png" alt="Placeholder usuário"/>
+                <Stories imagem="/src/assets/userpfp.png" alt="Placeholder usuário"/>
+                <Stories imagem="/src/assets/userpfp.png" alt="Placeholder usuário"/>
             </div>
 
             <Postagem icon="zenix" altIcon="Icone do usuário" usuario="zenix" tempo="a 67 minutos" imagem="/src/assets/zeni.png" altImg="Imagem da postagem"/>
