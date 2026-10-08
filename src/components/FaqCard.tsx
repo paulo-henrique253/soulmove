@@ -5,6 +5,7 @@ type FaqCardProps = {
 }
 
 function FaqCard({pergunta, resposta, index}: FaqCardProps) {
+    {/* mudar para usestate */}
     function trocarPergunta(){
         const resp = document.querySelector(`#resposta${index}`);
         resp?.classList.toggle("hidden")
