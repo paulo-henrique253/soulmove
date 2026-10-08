@@ -15,7 +15,7 @@ function TrajetoInput({ partida, destino, distancia }: TrajetoInputProps) {
 
             <div>
                 <h2>Distância:</h2>
-                <p>{distancia}</p>
+                <p>{distancia}km</p>
             </div>
         </article>
     );
