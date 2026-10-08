@@ -17,7 +17,7 @@ function SmInicio () {
             <div className="bg-gray-100 -mx-4 p-5 border-gray-300 border-t-2">
                 <Carteira />
 
-                <div className="flex gap-1 justify-center items-center">
+                <div className="flex gap-5 justify-center items-center">
                     <BotaoBola imagem="/src/assets/pixicon.png" diretorio="#" descricao="Sacar via PIX" alt="Pictograma do PIX" />
                     <BotaoBola imagem="/src/assets/lampadaicon.png" diretorio="#" descricao="Resgatar Vale Energia" alt="Pictograma de lâmpada" />
                     <BotaoBola imagem="/src/assets/raiopicon.png" diretorio="#" descricao="Pagar conta de luz" alt="Pictograma de raio" />
