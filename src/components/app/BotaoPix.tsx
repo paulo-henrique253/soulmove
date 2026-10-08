@@ -1,6 +1,4 @@
-import { Link } from "react-router";
-
-function Stories() {
+function BotaoPix() {
     return (
         <a
             href="https://www.sptrans.com.br/recarga"
@@ -13,4 +11,4 @@ function Stories() {
     );
 }
 
-export default Stories;
+export default BotaoPix;
