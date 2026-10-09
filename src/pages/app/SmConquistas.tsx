@@ -14,9 +14,9 @@ function SmConquistas() {
 
                 <div>
                     {/* temporario */}
-                    <Conquista titulo="Amigo da Mobilidade Urbana" descricao="Conclua 50 missões relacionadas ao transporte público." progresso={10} total={50} pontos={300} recompensas="Título “Amigo da Mobilidade Urbana”" icone="reloginho" />
+                    <Conquista titulo="Amigo da Mobilidade Urbana" descricao="Conclua 50 missões relacionadas ao transporte público." progresso={10} total={50} pontos={300} recompensas="Título “Amigo da Mobilidade Urbana”"/>
 
-                    <Conquista titulo="Amigo da Mobilidade Urbana" descricao="Conclua 50 missões relacionadas ao transporte público." progresso={10} total={50} pontos={300} recompensas="Título “Amigo da Mobilidade Urbana”" icone="reloginho" />
+                    <Conquista titulo="Amigo da Mobilidade Urbana" descricao="Conclua 50 missões relacionadas ao transporte público." progresso={10} total={50} pontos={300} recompensas="Título “Amigo da Mobilidade Urbana”" />
                 </div>
             </div>
   
