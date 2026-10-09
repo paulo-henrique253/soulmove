@@ -7,17 +7,24 @@ import Notificacao from "../../components/app/Notificacao"
 function SmMissoes() {
     return (
 
-        <>
-        <HeaderApp/>
-        <AreaSm/>
+        <article>
+            <HeaderApp/>
+            <AreaSm/>
 
-        <Notificacao diretorio="#" texto="Você tem 2 missões diárias disponíveis!" imagem="/src/assets/smicon.png" alt="legenda sabor"/>
+            <div className="bg-linear-to-t to-sky-200 from-indigo-300 -mx-4 px-5  border-gray-300 border-t-2">
+                <Notificacao diretorio="#" texto="Você tem 2 missões diárias disponíveis!" imagem="/src/assets/smicon.png" alt="legenda sabor"/>
 
-        {/* temporario */}
-        <Missao titulo="Use o Transporte Público" descricao="Complete um trajeto complexo (longo) utilizando o transporte público" tempo="3 dias" pontos="100" imagem="/src/assets/capa_mid2.png"/>
+                {/* temporario */}
+                <div className="flex flex-col">
+                    <Missao titulo="Use o Transporte Público" descricao="Complete um trajeto complexo (longo) utilizando o transporte público" tempo="3 dias" pontos="100" imagem="/src/assets/capa_mid2.png"/>
 
-        <FooterApp/>
-        </>
+                    <Missao titulo="Use o Transporte Público" descricao="Complete um trajeto complexo (longo) utilizando o transporte público" tempo="3 dias" pontos="100" imagem="/src/assets/capa_mid2.png"/>
+                </div>
+                
+            </div>
+        
+            <FooterApp/>
+        </article>
     )
 }
 

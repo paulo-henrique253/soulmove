@@ -25,7 +25,7 @@ function SmInicio () {
                 </div>
             </div>
 
-            <Notificacao diretorio="appMissoes" texto="Você tem 2 missões de mobilidade hoje!" imagem="/src/assets/smicon.png" alt="Mini logo da SoulMove"/>
+            <Notificacao diretorio="/appMissoes" texto="Você tem 2 missões de mobilidade hoje!" imagem="/src/assets/smicon.png" alt="Mini logo da SoulMove"/>
  
             <div className="flex gap-5 justify-center">
                 <Stories imagem="/src/assets/ads.png" alt="Imagem dos anúncios"/>
