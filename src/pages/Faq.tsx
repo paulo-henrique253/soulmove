@@ -13,7 +13,6 @@ function Faq(){
                         key={faq.id}
                         pergunta={faq.titulo}
                         resposta={faq.descricao}
-                        index={faq.id}
                     />
                 ))}
             </section>
