@@ -14,7 +14,7 @@ function ImagemInterativa( { principalSrc, principalAlt, secundarioSrc, secundar
             src={principalSrc} 
             alt={principalAlt} 
             />
-            <img className="absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100 group-focus:opacity-100"
+            <img className="absolute inset-0 w-full h-full object-contain transition-opacity duration-500 ease-in-out group-hover:opacity-100 group-focus:opacity-100"
             src= {secundarioSrc}
             alt= {secundarioAlt}
             />

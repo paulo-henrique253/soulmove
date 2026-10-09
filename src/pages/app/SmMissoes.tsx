@@ -11,7 +11,7 @@ function SmMissoes() {
         <HeaderApp/>
         <AreaSm/>
 
-        <Notificacao texto="Você tem 2 missões diárias disponíveis!" imagem="sabor" alt="legenda sabor"/>
+        <Notificacao diretorio="#" texto="Você tem 2 missões diárias disponíveis!" imagem="sabor" alt="legenda sabor"/>
 
         {/* temporario */}
         <Missao titulo="Use o Transporte Público" descricao="Complete um trajeto complexo (longo) utilizando o transporte público" tempo="3 dias" pontos="100" icone="reloginho aq" imagem="imagem de fundo aqui"/>
