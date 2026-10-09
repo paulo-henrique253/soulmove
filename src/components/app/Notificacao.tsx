@@ -1,4 +1,4 @@
-import { Link, Links } from "react-router"
+import { Link } from "react-router"
 
 type NotificacaoProps = {
     texto: string
