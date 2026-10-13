@@ -18,10 +18,10 @@ function SmInicio () {
                 <Carteira />
 
                 <div className="flex gap-5 justify-center items-center">
-                    <BotaoBola imagem="/src/assets/pixicon.png" diretorio="#" descricao="Sacar via PIX" alt="Pictograma do PIX" />
-                    <BotaoBola imagem="/src/assets/lampadaicon.png" diretorio="#" descricao="Resgatar Vale Energia" alt="Pictograma de lâmpada" />
-                    <BotaoBola imagem="/src/assets/raiopicon.png" diretorio="#" descricao="Pagar conta de luz" alt="Pictograma de raio" />
-                    <BotaoBola imagem="/src/assets/smicon.png" diretorio="/appMissoes" descricao="Acessar a SoulMove" alt="Pictograma da SoulMove" />
+                    <BotaoBola imagem="/src/assets/pixicon.png" diretorio="#" descricao="Sacar via PIX" alt="Pictograma do PIX" funcional={false}/>
+                    <BotaoBola imagem="/src/assets/lampadaicon.png" diretorio="#" descricao="Resgatar Vale Energia" alt="Pictograma de lâmpada" funcional={false}/>
+                    <BotaoBola imagem="/src/assets/raiopicon.png" diretorio="#" descricao="Pagar conta de luz" alt="Pictograma de raio" funcional={false}/>
+                    <BotaoBola imagem="/src/assets/smicon.png" diretorio="/appMissoes" descricao="Acessar a SoulMove" alt="Pictograma da SoulMove" funcional={true}/>
                 </div>
             </div>
 
