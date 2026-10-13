@@ -4,10 +4,8 @@ import Saldo from "./Saldo";
 
 function Carteira() {
     return (
-        // Adicionamos 'relative' e 'overflow-hidden' no container principal
         <article className="relative overflow-hidden bg-linear-to-r to-sky-400 from-indigo-500 p-5 text-white rounded-2xl drop-shadow-md/50 mt-6 mb-7 mr-2 ml-2">
 
-            {/* Camada do Conteúdo: o 'relative z-10' garante que o texto e botões fiquem na frente da imagem */}
             <div className="relative z-10">
                 <p className="font-['Lexend_Deca'] text-[0.8rem]">MINHA CARTEIRA</p>
 
@@ -35,7 +33,6 @@ function Carteira() {
             <img
                 src="/src/assets/logosu.png"
                 alt="Logo da SoulUp"
-                // right-0 fixa ela na direita, h-full e w-auto mantêm a proporção sem distorcer
                 className="absolute right-0 top-0 h-full w-auto object-contain opacity-10 mix-blend-overlay pointer-events-none"
             />
 
