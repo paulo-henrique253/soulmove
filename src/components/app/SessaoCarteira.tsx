@@ -13,7 +13,7 @@ function SessaoCarteira( {icone, alt, titulo, descricao}: SessaoCarteiraProps) {
                 <h3>{titulo}</h3>
                 <p>{descricao}</p>
             </div>
-            <img src="setinha" alt="Seta para a esquerda." />
+            <img src="/src/assets/setadireitapreta.png" alt="Seta para a esquerda." />
         </>   
     );
 }
