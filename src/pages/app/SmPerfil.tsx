@@ -33,7 +33,7 @@ function SmPerfil() {
             </section>
 
             <div className="flex items-center justify-center">
-                <Link to="/appCarteira" className="center text-white bg-indigo-500 py-2 px-6 rounded-2xl my-7">
+                <Link to="/appCarteira" className=" font-[Lexend_Deca] center text-white bg-indigo-500 py-2 px-6 rounded-2xl my-7">
                     Carteira
                 </Link>
             </div>
