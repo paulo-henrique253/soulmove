@@ -6,8 +6,8 @@ type SaldoProps = {
 function Saldo( {saldo, descricao}: SaldoProps) {
     return (
         <article className="grid">
-            <h2 className="font-[Lexend_Deca] text-2xl">R${saldo}</h2>
-            <p className="font-[Lexend_Deca] text-[0.6rem] max-w-25">{descricao}</p>    
+            <h2 className="font-[Lexend_Deca] text-2xl text-white">R${saldo}</h2>
+            <p className="font-[Lexend_Deca] text-[0.6rem] max-w-25 text-white">{descricao}</p>    
         </article>   
     );
 }
