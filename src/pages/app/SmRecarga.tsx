@@ -2,6 +2,7 @@ import { Link } from "react-router"
 import BotaoPix from "../../components/app/BotaoPix"
 import CaixaPix from "../../components/app/CaixaPix"
 import CardSaldo from "../../components/app/CardSaldo"
+import { usuario } from "../../data/usuario";
 
 function SmRecarga() {
     return (
@@ -18,7 +19,7 @@ function SmRecarga() {
               
             </div>
       
-            <CardSaldo saldo={8.60}/>
+            <CardSaldo saldo={usuario.saldoMobilidade}/>
 
             <div>
                 <h3>Quando o saldo estiver liberado</h3>

@@ -10,7 +10,10 @@ function FooterApp() {
             <img src="/src/assets/comunidadeicon.png" alt="Pictograma de pessoas." className="w-8 opacity-50"/>
             <button className="text-2   xl text-white bg-indigo-500 px-5 rounded-2xl leading-none font-sans font-thin pt-1 pb-2 opacity-50">+</button>
             <img src="/src/assets/videosicon.png" alt="Pictograma de play." className="w-8 opacity-50"/>
-            <img src="/src/assets/msgicon.png" alt="Pictograma de batao de fala." className="w-8 opacity-50"/>
+
+            <Link to="/appPerfil">
+                <img src="/src/assets/msgicon.png" alt="Pictograma de batao de fala." className="w-8 opacity-100" />
+            </Link>
         </footer>
     );
 }
