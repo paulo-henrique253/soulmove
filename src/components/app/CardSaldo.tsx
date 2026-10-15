@@ -5,6 +5,12 @@ type CardSaldoProps = {
     saldo: number
 }
 
+let disponivel = false
+
+if (usuario.saldoMobilidade >= 10) {
+    disponivel = true
+}
+
 function CardSaldo({ saldo }: CardSaldoProps) {
 
     saldo = usuario.saldoMobilidade
@@ -15,7 +21,7 @@ function CardSaldo({ saldo }: CardSaldoProps) {
             <h2 className="font-[Momo_Trust_Display] text-md">Saldo de mobilidade</h2>
             <Saldo saldo={saldo} descricao=""></Saldo>
             <div className="border-t-6 border-white rounded-full mb-1"></div> {/* barra de compltar */}
-            <p className="text-[0.65rem] font-[Lexend_Deca]">Faltam R${faltante.toFixed(2)} para liberar a recarga (mínimo R$10,00)</p>
+            <p className="text-[0.65rem] font-[Lexend_Deca]">{disponivel ? "Liberado! Você já pode recarregar o seu bilhete" : `Faltam R$ ${faltante.toFixed(2)} para liberar a recarga (mínimo R$10,00)`}</p>
         </article>
     );
 }
