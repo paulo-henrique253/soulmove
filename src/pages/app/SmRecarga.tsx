@@ -22,7 +22,7 @@ function SmRecarga() {
       
             <CardSaldo saldo={usuario.saldoMobilidade}/>
 
-            <section className="bg-white -mx-5 rounded-t-4xl p-7 flex flex-col">
+            <section className="bg-white -mx-5 rounded-t-4xl p-7 flex flex-col gap-10">
                 <h3 className="text-indigo-500 font-[Lexend_Deca]">Quando o saldo estiver liberado</h3>
                 <div className="flex flex-col gap-3">
                     <ItemLista numero="1" descricao="Gere o código Pix na Loja da SPTrans"/>
@@ -30,10 +30,10 @@ function SmRecarga() {
                     <ItemLista numero="2" descricao="Copie o código Pix e cole no espaço abaixo"/>
 
                     <ItemLista numero="3" descricao="Seu crédito cai no cartão em poucos minutos"/>
-
-                    <BotaoPix/>
-                    <CaixaPix/>
                 </div>
+
+                <BotaoPix />
+                <CaixaPix />
             </section>
         
         </article>
