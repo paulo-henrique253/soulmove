@@ -48,7 +48,7 @@ function SmCarteira() {
                 <BotaoBola imagem="/src/assets/pixicon.png" diretorio="#" descricao="Sacar via PIX" alt="Pictograma PIX." funcional={false}/>
                 <BotaoBola imagem="/src/assets/smicon.png" diretorio="/appRecarga" descricao="Recarregar Bilhete" alt="Pictograma SoulMove." funcional={true}/>
                 <BotaoBola imagem="/src/assets/raiopicon.png" diretorio="#" descricao="Pagar conta de luz" alt="Pictograma Raio." funcional={false}/>
-                <BotaoBola imagem="/src/assets/iconmoeda.png" diretorio="#" descricao="Resgate Vale-Energia" alt="Pictograma Moeda." funcional={false}/>
+                <BotaoBola imagem="/src/assets/iconmoeda.png" diretorio="#" descricao="Vale-Energia" alt="Pictograma Moeda." funcional={false}/>
             </div>
 
             <h2 className="font-[Momo_Trust_Display] font-black">Meus Valores</h2>
