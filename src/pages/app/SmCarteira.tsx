@@ -2,6 +2,7 @@ import { Link } from "react-router";
 import BotaoBola from "../../components/app/BotaoBola";
 import Saldo from "../../components/app/Saldo";
 import SessaoCarteira from "../../components/app/SessaoCarteira";
+import { usuario } from "../../data/usuario";
 
 function SmCarteira() {
     return (
@@ -37,8 +38,8 @@ function SmCarteira() {
             </div>
             
             <div className="flex gap-10">
-                <Saldo saldo= {0.46} descricao="Em desconto na conta de energia."/>
-                <Saldo saldo= {0.46} descricao="Em desconto no transporte público."/>
+                <Saldo saldo= {usuario.saldoLuz} descricao="Em desconto na conta de energia."/>
+                <Saldo saldo= {usuario.saldoMobilidade} descricao="Em desconto no transporte público."/>
             </div>
         </div>
 

@@ -16,7 +16,7 @@ function SmMissoes() {
 
                 {/* temporario */}
                 <div className="flex flex-col">
-                    <Missao titulo="Use o Transporte Público" descricao="Complete um trajeto complexo (longo) utilizando o transporte público" tempo="3 dias" pontos="100" imagem="/src/assets/capa_mid2.png"/>
+                    <Missao titulo="Use o Transporte Público" descricao="Complete um trajeto complexo (longo) utilizando o transporte público" tempo="3 dias" pontos="100" imagem="c"/>
 
                     <Missao titulo="Use o Transporte Público" descricao="Complete um trajeto complexo (longo) utilizando o transporte público" tempo="3 dias" pontos="100" imagem="/src/assets/capa_mid2.png"/>
                 </div>

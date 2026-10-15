@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import Saldo from "./Saldo";
+import { usuario } from "../../data/usuario";
 
 
 function Carteira() {
@@ -18,8 +19,8 @@ function Carteira() {
 
 
                 <div className="flex gap-5">
-                    <Saldo saldo={0.46} descricao="Em desconto na conta de energia." />
-                    <Saldo saldo={0.46} descricao="Em desconto no transporte público." />
+                    <Saldo saldo={usuario.saldoLuz} descricao="Em desconto na conta de energia." />
+                    <Saldo saldo={usuario.saldoMobilidade} descricao="Em desconto no transporte público." />
                 </div>
 
                 <div className="mt-3 flex justify-center">
