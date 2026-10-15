@@ -3,6 +3,7 @@ import BotaoPix from "../../components/app/BotaoPix"
 import CaixaPix from "../../components/app/CaixaPix"
 import CardSaldo from "../../components/app/CardSaldo"
 import { usuario } from "../../data/usuario";
+import ItemLista from "../../components/app/ItemLista";
 
 function SmRecarga() {
     return (
@@ -21,28 +22,20 @@ function SmRecarga() {
       
             <CardSaldo saldo={usuario.saldoMobilidade}/>
 
-            <div>
-                <h3>Quando o saldo estiver liberado</h3>
-                <div>
-                    <div>
-                        <p>1</p>
-                        <p>Gere o código Pix de recarga na Loja Virtual da SPTrans</p>
-                    </div>
+            <section className="bg-white -mx-5 rounded-t-4xl p-7 flex flex-col">
+                <h3 className="text-indigo-500 font-[Lexend_Deca]">Quando o saldo estiver liberado</h3>
+                <div className="flex flex-col gap-3">
+                    <ItemLista numero="1" descricao="Gere o código Pix na Loja da SPTrans"/>
 
-                    <div>
-                        <p>2</p>
-                        <p>Copie o código Pix e cole no espaço abaixo</p>
-                    </div>
+                    <ItemLista numero="2" descricao="Copie o código Pix e cole no espaço abaixo"/>
 
-                    <div>
-                        <p>3</p>
-                        <p>Seu crédito cai no cartão em poucos minutos</p>
-                    </div>
+                    <ItemLista numero="3" descricao="Seu crédito cai no cartão em poucos minutos"/>
 
                     <BotaoPix/>
                     <CaixaPix/>
                 </div>
-            </div>
+            </section>
+        
         </article>
     )
 }
