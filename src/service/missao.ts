@@ -1,6 +1,6 @@
 import type { TipoMissao } from "../types/missao";
 
-export const API = "https://spousal-uptight-shiftless.ngrok-free.dev/api/v1/missao"
+export const API = "https://soulmove-java-3.onrender.com/api/v1/missao"
 
 
 export async function ListarMissoes(): Promise<TipoMissao[]>{
