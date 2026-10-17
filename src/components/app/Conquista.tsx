@@ -1,19 +1,16 @@
+import type { TipoConquista } from "../../types/conquista";
+
 type ConquistaProps = {
-    titulo: string
-    descricao: string
-    progresso: number
-    total: number
-    pontos: number
-    recompensas: string
+    conquista: TipoConquista;
 }
 
-function Conquista({ titulo, descricao, progresso, total, pontos, recompensas }: ConquistaProps) {
+function Conquista({ conquista }: ConquistaProps) {
     return (
         <div className="bg-linear-to-r to-sky-400 from-indigo-500 p-3 rounded-2xl flex flex-col gap-3 drop-shadow-md/50 my-6">
             <div className="flex">
                 <div>
-                    <h2 className="font-[Lexend_Deca] text-white">{titulo}</h2>
-                    <p className="font-[Lexend_Deca] text-white text-[0.8rem]">{descricao}</p>
+                    <h2 className="font-[Lexend_Deca] text-white">{conquista.nome}</h2>
+                    <p className="font-[Lexend_Deca] text-white text-[0.8rem]">{conquista.descricao}</p>
                     
                 </div>
 
@@ -22,16 +19,16 @@ function Conquista({ titulo, descricao, progresso, total, pontos, recompensas }:
             </div>
 
             <div className="flex justify-between">
-                <p className="font-[Lexend_Deca] text-white">{progresso}/{total}</p>
+                <p className="font-[Lexend_Deca] text-white">{conquista.progressoAtual}/{conquista.meta}</p>
                 <div></div> {/* barrinha de progresso */}
-                <p className="font-[Momo_Trust_Display] text-white">{pontos}pts</p>
+                <p className="font-[Momo_Trust_Display] text-white">{conquista.pontos}pts</p>
             </div>
 
             {/* accordion */}
 
             <div className="hidden">
                 <li>
-                    <div>{recompensas}</div>
+                    <div>{conquista.recompensas}</div>
                 </li>
             </div>
         </div>
