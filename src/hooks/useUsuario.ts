@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { UserContext } from '../contexts/UserContext';
+import { UserContext } from '../contexts/UsuarioContext';
 
-export function useUser(){
+export function useUsuario(){
     const context = useContext(UserContext);
 
      if (context === null) {

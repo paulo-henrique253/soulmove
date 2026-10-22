@@ -17,6 +17,7 @@ import SmPerfil from "./pages/app/SmPerfil"
 import SmRecarga from "./pages/app/SmRecarga"
 import SmConquistas from "./pages/app/SmConquistas"
 import AppLayout from "./layouts/AppLayout"
+import SmLogin from "./pages/app/SmLogin";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route path="/appPerfil" element={<SmPerfil />} />
           <Route path="/appRecarga" element={<SmRecarga />} />
           <Route path="/appConquistas" element={<SmConquistas />} />
+          <Route path="/appLogin" element={<SmLogin />}/>
         </Route>
       </Route>
     </Routes>
