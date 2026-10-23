@@ -177,7 +177,7 @@ export default function ListaConquistas() {
                 >
                   <td className="py-4 px-6 whitespace-nowrap">
                     <Link 
-                      to={`/adm/conquista/lista/${conquista.id}`}
+                      to={`/adm/conquistas/${conquista.id}`}
                       className="text-indigo-600 font-bold hover:text-sky-500 hover:underline transition-colors"
                     >
                       {conquista.nome}

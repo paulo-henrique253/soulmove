@@ -21,6 +21,59 @@ export async function ListarConquistasUsuario(usuarioId: number): Promise<TipoCo
 
 }
 
+export async function ObterConquista(conquistaId: string | number): Promise<TipoConquista> {
+    const resposta = await fetch(`${API}/${conquistaId}`);
+
+    if (!resposta.ok){
+        throw new Error(`Erro HTTP: ${resposta.status}`)
+    }
+
+    const dados: TipoConquista = await resposta.json();
+
+    return dados;
+}
+
+export async function editar(dados:NovaConquistaFormValues, id:number): Promise<boolean> {
+    const resposta = await fetch(`${API}/${id}`, {
+        method: 'PUT',
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(dados)
+    });
+
+    if(resposta.status === 204){
+        return true;
+    }
+    
+    if(!resposta.ok){
+        const erro: ErrorResponse = await resposta.json();
+        throw new Error("Falha ao cadastrar: " + erro.message);
+    }
+    return true;
+    
+}
+
+export async function excluir(id:number): Promise<boolean> {
+    const resposta = await fetch(`${API}/${id}`, {
+        method: 'DELETE',
+        headers: {
+            "Content-Type": "application/json",
+        },
+    });
+
+    if(resposta.status === 204){
+        return true;
+    }
+
+    if(!resposta.ok){
+        const erro: ErrorResponse = await resposta.json();
+        throw new Error("Falha ao cadastrar: " + erro.message);
+    }
+    return true;
+
+}
+
 export async function ListarConquistas(): Promise<TipoConquista[]>{
 
     const resposta = await fetch(API);

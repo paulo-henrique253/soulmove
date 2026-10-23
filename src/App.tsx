@@ -24,6 +24,7 @@ import NovaConquista from "./pages/adm/NovaConquista"
 import PainelAdmin from "./pages/adm/PainelAdmin"
 import ListaConquistas from "./pages/adm/ListaConquistas"
 import ListaMissoes from "./pages/adm/ListaMissoes"
+import EditarConquista from "./pages/adm/EditarConquista"
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path="/adm/novaConquista" element={<NovaConquista />} />
         <Route path="/adm/conquistas" element={<ListaConquistas />} />
         <Route path="/adm/missoes" element={<ListaMissoes />} />
+        <Route path="/adm/conquistas/:conquistaId" element={<EditarConquista />} />
         <Route path="/adm" element={<PainelAdmin />} />
         
 
