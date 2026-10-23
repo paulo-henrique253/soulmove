@@ -9,7 +9,7 @@ export default function PainelAdmin() {
   const handleVerMissoes = () => navigate("");
   const handleCadastrarMissao = () => navigate("/adm/novaMissao");
   
-  const handleVerConquistas = () => navigate("");
+  const handleVerConquistas = () => navigate("/adm/conquistas");
   const handleCadastrarConquista = () => navigate("/adm/novaConquista");
 
   return (

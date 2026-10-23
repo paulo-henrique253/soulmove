@@ -80,7 +80,7 @@ function NovaConquista(){
                   {...register("descricao", { required: "Escreva a descrição da conquista." })}
               />
 
-              {/* Grid para agrupar os campos numéricos lado a lado */}
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <ContatoInput
                       id="pontos"

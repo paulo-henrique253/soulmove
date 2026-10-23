@@ -28,7 +28,7 @@ function Conquista({ conquista }: ConquistaProps) {
 
             <div className="hidden">
                 <li>
-                    <div>{conquista.recompensas}</div>
+                    <div>{`Titulo: ${conquista.titulo}`}</div>
                 </li>
             </div>
         </div>

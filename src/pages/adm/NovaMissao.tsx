@@ -87,7 +87,6 @@ function NovaMissao(){
                             {...register("descricao", { required: "Escreva a descrição da missão." })}
                         />
 
-                        {/* Grid para agrupar os campos numéricos lado a lado */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <ContatoInput
                                 id="pontos"
@@ -97,7 +96,7 @@ function NovaMissao(){
                                 erro={errors.pontos?.message}
                                 {...register("pontos", { 
                                     required: "Informe a pontuação.",
-                                    valueAsNumber: true // Garante que o react-hook-form retorne number
+                                    valueAsNumber: true 
                                 })}
                             />
 
@@ -162,7 +161,6 @@ function NovaMissao(){
                     </form>
                 </div>
 
-                {/* Seção lateral adaptada. Removi a altura fixa (h-104) para acompanhar o tamanho dinâmico do formulário novo */}
                 <div className="hidden w-full max-w-md flex-col gap-6 self-start lg:flex">
                     <h2 className="font-['Momo_Trust_Display'] text-3xl text-indigo-600">
                         Nova Missão SoulMove

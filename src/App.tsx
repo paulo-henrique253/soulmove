@@ -22,6 +22,7 @@ import NovaMissao from "./pages/adm/NovaMissao";
 import SmCadastro from "./pages/app/SmCadastro"
 import NovaConquista from "./pages/adm/NovaConquista"
 import PainelAdmin from "./pages/adm/PainelAdmin"
+import ListaConquistas from "./pages/adm/ListaConquistas"
 
 function App() {
   return (
@@ -35,8 +36,9 @@ function App() {
         <Route path="/integrantes/:slug" element={<Integrante />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/faq" element={<Faq />} />
-        <Route path="/adm/missao" element={<NovaMissao />} />
-        <Route path="/adm/conquista" element={<NovaConquista />} />
+        <Route path="/adm/novaMissao" element={<NovaMissao />} />
+        <Route path="/adm/novaConquista" element={<NovaConquista />} />
+        <Route path="/adm/conquistas" element={<ListaConquistas />} />
         <Route path="/adm" element={<PainelAdmin />} />
         
 

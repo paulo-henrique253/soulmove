@@ -6,5 +6,5 @@ export type TipoConquista = {
     meta: number,
     progressoAtual: number,
     nomeTipo: string,
-    recompensas: string
+    titulo: string
 }

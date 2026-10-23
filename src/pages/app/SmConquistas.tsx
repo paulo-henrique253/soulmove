@@ -4,7 +4,7 @@ import FooterApp from "../../components/app/FooterApp"
 import HeaderApp from "../../components/app/HeaderApp"
 import Notificacao from "../../components/app/Notificacao"
 import type { TipoConquista } from "../../types/conquista"
-import { ListarConquistas } from "../../service/conquista"
+import { ListarConquistasUsuario } from "../../service/conquista"
 import { useEffect, useState } from "react"
 import { useUsuario } from '../../hooks/useUsuario';
 import { Navigate } from 'react-router';
@@ -28,7 +28,7 @@ function SmConquistas() {
 
             try {
                 if(usuario){
-                    setConquistas(await ListarConquistas(usuario.id));
+                    setConquistas(await ListarConquistasUsuario(usuario.id));
                 }
 
             } catch (erro) {
