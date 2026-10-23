@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, Navigate } from "react-router";
 import type { TipoMissao } from "../../types/missao"; // Ajuste o caminho conforme seu projeto
 import { useEffect, useState } from "react";
 import { ListarMissoes } from "../../service/missao"; // Ajuste o caminho conforme seu projeto
@@ -13,9 +13,8 @@ export default function ListaMissoes() {
 
 
     const {usuario} = useUsuario();
-	const navigate = useNavigate();
 
-	if(!usuario?.isAdm){ navigate("/")}
+	if(!usuario?.isAdm){ return <Navigate to='/' />}
 
     useEffect(() => {
         async function carregar() {

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router";
+import { Navigate, useNavigate, useParams } from "react-router";
 import type { TipoMissao } from "../../types/missao"; // Ajuste o caminho do tipo
 import { ObterMissao, editar, excluir } from "../../service/missao"; // Ajuste os caminhos
 import ContatoInput from "../../components/ContatoInput";
@@ -17,7 +17,7 @@ function EditarMissao() {
   const navigate = useNavigate();
 
   const {usuario} = useUsuario();
-if(!usuario?.isAdm){ navigate("/")}
+if(!usuario?.isAdm){ return <Navigate to='/' />}
   
   const [carregando, setCarregando] = useState(true);
   const [excluindo, setExcluindo] = useState(false);

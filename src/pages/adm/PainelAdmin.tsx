@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router";
+import { Navigate, useNavigate } from "react-router";
 import AdminCard from "../../components/adm/AdminCard";
 import { useUsuario } from "../../hooks/useUsuario";
 
@@ -7,7 +7,7 @@ export default function PainelAdmin() {
 	const {usuario} = useUsuario();
 	const navigate = useNavigate();
 
-	if(!usuario?.isAdm){ navigate("/")}
+	if(!usuario?.isAdm){ return <Navigate to='/' />}
 
   // Funções de navegação
   const handleVerMissoes = () => navigate("/adm/missoes");

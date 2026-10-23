@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router";
+import { useNavigate, useParams, Navigate } from "react-router";
 import type { TipoConquista } from "../../types/conquista";
 import { ObterConquista } from "../../service/conquista";
 import ContatoInput from "../../components/ContatoInput";
@@ -19,7 +19,7 @@ function EditarConquista () {
   const {usuario} = useUsuario();
   const navigate = useNavigate();
   
-  if(!usuario?.isAdm){ navigate("/")}
+  if(!usuario?.isAdm){ return <Navigate to='/' />}
 
   const { conquistaId } = useParams();
   const [carregando, setCarregando] = useState(true);

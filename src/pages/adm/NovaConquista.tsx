@@ -7,7 +7,7 @@ import ContatoSelect from '../../components/ContatoSelect';
 import { useState } from 'react';
 import ErroLabel from '../../components/app/ErroLabel';
 import { useUsuario } from '../../hooks/useUsuario';
-import { useNavigate } from 'react-router';
+import { Navigate } from 'react-router';
 
 export type NovaConquistaFormValues = {
   nome: string,
@@ -22,9 +22,8 @@ function NovaConquista(){
 
 
     const {usuario} = useUsuario();
-	const navigate = useNavigate();
 
-	if(!usuario?.isAdm){ navigate("/")}
+	if(!usuario?.isAdm){ return <Navigate to={"/"} />}
 
     const {register, handleSubmit, formState: { isSubmitting, errors } } = useForm<NovaConquistaFormValues>()
 
