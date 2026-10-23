@@ -3,6 +3,7 @@ import ContatoInput from '../../components/ContatoInput';
 import { useForm } from 'react-hook-form';
 import { cadastrar } from '../../service/missao';
 import ContatoTextarea from '../../components/ContatoTextarea';
+import ContatoSelect from '../../components/ContatoSelect';
 
 export type NovaMissaoFormData = {
     titulo: string,
@@ -61,14 +62,18 @@ function NovaMissao(){
                             {...register("titulo", { required: "Informe o título da missão." })}
                         />
 
-                        <ContatoInput
+                        <ContatoSelect
                             id="nomeTipo"
                             label="Tipo da Missão"
-                            type="text"
-                            placeholder="Ex: Sustentabilidade"
                             erro={errors.nomeTipo?.message}
-                            {...register("nomeTipo", { required: "Informe o tipo da missão." })}
-                        />
+                            {...register("nomeTipo", { required: "Selecione o tipo da missão." })}
+                            defaultValue="" // Garante que comece no placeholder
+                        >
+                            <option value="" disabled hidden>Selecione um tipo...</option>
+                            <option value="economia_co2">Economia de CO2</option>
+                            <option value="quantidade_missoes">Quantidade de Missões</option>
+                            <option value="trajeto_longo">Trajeto Longo</option>
+                        </ContatoSelect>
 
                         <ContatoTextarea
                             id="descricao"
