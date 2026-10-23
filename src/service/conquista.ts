@@ -1,3 +1,5 @@
+import type { ErrorResponse } from "../types/ErrorResponse";
+import type { NovaConquistaFormValues } from "../pages/adm/NovaConquista";
 import type { TipoConquista } from "../types/conquista";
 
 
@@ -17,4 +19,21 @@ export async function ListarConquistas(usuarioId: number): Promise<TipoConquista
 
     return dados;
 
+}
+
+export async function cadastrar(dados:NovaConquistaFormValues): Promise<TipoConquista> {
+    const resposta = await fetch(API, {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(dados)
+    });
+    
+    if(!resposta.ok){
+        const erro: ErrorResponse = await resposta.json();
+        throw new Error("Falha ao cadastrar: " + erro.message);
+    }
+    const conquista: TipoConquista = await resposta.json();
+    return conquista;
 }

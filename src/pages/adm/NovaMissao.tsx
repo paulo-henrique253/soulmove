@@ -4,7 +4,8 @@ import { useForm } from 'react-hook-form';
 import { cadastrar } from '../../service/missao';
 import ContatoTextarea from '../../components/ContatoTextarea';
 import ContatoSelect from '../../components/ContatoSelect';
-
+import ErroLabel from '../../components/app/ErroLabel';
+import { useState } from 'react';
 export type NovaMissaoFormData = {
     titulo: string,
     nomeTipo: string,
@@ -20,7 +21,7 @@ export type NovaMissaoFormData = {
 function NovaMissao(){
 
     const {register, handleSubmit, formState: { isSubmitting, errors } } = useForm<NovaMissaoFormData>()
-
+    const [erro, setErro] = useState<string | null>();
 
     async function onSubmit (data: NovaMissaoFormData){
 
@@ -38,8 +39,11 @@ function NovaMissao(){
 
 
         try {
-            cadastrar(formData)
+            await cadastrar(formData)
         } catch (error) {
+            if (error instanceof Error){
+                setErro(error.message);
+            }
             console.error('Erro de conexão:', error);
         }
 
@@ -145,7 +149,9 @@ function NovaMissao(){
                             {...register("arquivoImagem", { required: "Selecione uma imagem." })}
                             className="file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100 cursor-pointer"
                         />
-
+                        {
+                            erro && (<ErroLabel message= {erro} />)
+                        }
                         <button
                             type="submit"
                             className="cursor-pointer self-center px-8 py-4 mt-2 bg-linear-to-r from-indigo-500 to-sky-400 text-white font-['Lexend_Deca'] font-bold rounded-full hover:opacity-90 transition-opacity"
