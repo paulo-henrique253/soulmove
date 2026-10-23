@@ -6,7 +6,7 @@ export default function PainelAdmin() {
 	const navigate = useNavigate();
 
   // Funções de navegação
-  const handleVerMissoes = () => navigate("");
+  const handleVerMissoes = () => navigate("/adm/missoes");
   const handleCadastrarMissao = () => navigate("/adm/novaMissao");
   
   const handleVerConquistas = () => navigate("/adm/conquistas");

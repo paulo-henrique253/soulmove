@@ -23,6 +23,7 @@ import SmCadastro from "./pages/app/SmCadastro"
 import NovaConquista from "./pages/adm/NovaConquista"
 import PainelAdmin from "./pages/adm/PainelAdmin"
 import ListaConquistas from "./pages/adm/ListaConquistas"
+import ListaMissoes from "./pages/adm/ListaMissoes"
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path="/adm/novaMissao" element={<NovaMissao />} />
         <Route path="/adm/novaConquista" element={<NovaConquista />} />
         <Route path="/adm/conquistas" element={<ListaConquistas />} />
+        <Route path="/adm/missoes" element={<ListaMissoes />} />
         <Route path="/adm" element={<PainelAdmin />} />
         
 

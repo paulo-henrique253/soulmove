@@ -1,7 +1,6 @@
 import { Link } from "react-router";
 import type { TipoConquista } from "../../types/conquista";
 import { useEffect, useState } from "react";
-import { useUsuario } from "../../hooks/useUsuario";
 import { ListarConquistas } from "../../service/conquista";
 
 
