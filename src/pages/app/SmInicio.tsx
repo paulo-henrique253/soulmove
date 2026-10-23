@@ -5,8 +5,14 @@ import Postagem from "../../components/app/Postagem"
 import Stories from "../../components/app/Stories"
 import HeaderApp from "../../components/app/HeaderApp";
 import FooterApp from "../../components/app/FooterApp";
+import { Navigate } from 'react-router';
+import { useUsuario } from '../../hooks/useUsuario';
 
 function SmInicio () {
+    const {usuario} = useUsuario();
+    if(!usuario){
+        return <Navigate to={'/applogin'} />;
+    }
     return (
         <article className="
         grid

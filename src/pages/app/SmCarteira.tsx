@@ -1,10 +1,12 @@
-import { Link } from "react-router";
+import { Link, Navigate } from 'react-router';
 import BotaoBola from "../../components/app/BotaoBola";
 import Saldo from "../../components/app/Saldo";
 import SessaoCarteira from "../../components/app/SessaoCarteira";
 import { usuario } from "../../data/usuario";
-
 function SmCarteira() {
+    if(!usuario){
+        return <Navigate to={'/applogin'} />;
+    }
     return (
         
         <article className="bg-indigo-500 -m-4 p-5 pt-15">
