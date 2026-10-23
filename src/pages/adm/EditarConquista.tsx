@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Navigate, useNavigate, useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import type { TipoConquista } from "../../types/conquista";
 import { ObterConquista } from "../../service/conquista";
 import ContatoInput from "../../components/ContatoInput";
@@ -11,8 +11,16 @@ import { useForm } from "react-hook-form";
 import ErroLabel from "../../components/app/ErroLabel"; 
 import { editar, excluir } from "../../service/conquista";
 import ModalConfirmacao from "../../components/ModalConfirmacao";
+import { useUsuario } from '../../hooks/useUsuario';
+
 
 function EditarConquista () {
+
+  const {usuario} = useUsuario();
+  const navigate = useNavigate();
+  
+  if(!usuario?.isAdm){ navigate("/")}
+
   const { conquistaId } = useParams();
   const [carregando, setCarregando] = useState(true);
   const [excluindo, setExcluindo] = useState(false);
@@ -23,7 +31,8 @@ function EditarConquista () {
   const [mostrarModalExclusao, setMostrarModalExclusao] = useState(false);
 
   const {register, handleSubmit, reset, formState: { isSubmitting, errors } } = useForm<NovaConquistaFormValues>()
-  const navigate = useNavigate();
+
+
   useEffect(() => {
     async function carregar() {
 

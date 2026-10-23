@@ -1,9 +1,13 @@
 import { useNavigate } from "react-router";
 import AdminCard from "../../components/adm/AdminCard";
+import { useUsuario } from "../../hooks/useUsuario";
 
 export default function PainelAdmin() {
   
+	const {usuario} = useUsuario();
 	const navigate = useNavigate();
+
+	if(!usuario?.isAdm){ navigate("/")}
 
   // Funções de navegação
   const handleVerMissoes = () => navigate("/adm/missoes");
@@ -12,6 +16,7 @@ export default function PainelAdmin() {
   const handleVerConquistas = () => navigate("/adm/conquistas");
   const handleCadastrarConquista = () => navigate("/adm/novaConquista");
 
+	
   return (
     <main className="min-h-screen bg-gray-50 flex flex-col items-center py-20 px-4 sm:px-8">
       

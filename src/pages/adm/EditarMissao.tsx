@@ -10,10 +10,14 @@ import ErroLabel from "../../components/app/ErroLabel";
 import ModalConfirmacao from "../../components/ModalConfirmacao";
 import { useForm } from "react-hook-form";
 import type { NovaMissaoFormData } from "./NovaMissao";
+import { useUsuario } from '../../hooks/useUsuario';
 
 function EditarMissao() {
   const { missaoId } = useParams();
   const navigate = useNavigate();
+
+  const {usuario} = useUsuario();
+if(!usuario?.isAdm){ navigate("/")}
   
   const [carregando, setCarregando] = useState(true);
   const [excluindo, setExcluindo] = useState(false);

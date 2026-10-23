@@ -6,6 +6,9 @@ import ContatoTextarea from '../../components/ContatoTextarea';
 import ContatoSelect from '../../components/ContatoSelect';
 import ErroLabel from '../../components/app/ErroLabel';
 import { useState } from 'react';
+import { useUsuario } from '../../hooks/useUsuario';
+import { useNavigate } from 'react-router';
+
 export type NovaMissaoFormData = {
     titulo: string,
     nomeTipo: string,
@@ -19,6 +22,11 @@ export type NovaMissaoFormData = {
 }
 
 function NovaMissao(){
+
+    const {usuario} = useUsuario();
+	const navigate = useNavigate();
+
+	if(!usuario?.isAdm){ navigate("/")}
 
     const {register, handleSubmit, formState: { isSubmitting, errors } } = useForm<NovaMissaoFormData>()
     const [erro, setErro] = useState<string | null>();

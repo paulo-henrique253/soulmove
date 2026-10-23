@@ -40,6 +40,7 @@ function MenuNavegacao({ trocarMenu }: MenuNavegacaoProps) {
 
                 md:static
                 md:flex-row
+                md:flex-wrap
                 md:gap-2
                 md:rounded-none
                 md:bg-transparent
@@ -98,11 +99,14 @@ function MenuNavegacao({ trocarMenu }: MenuNavegacaoProps) {
             <Link to="/contato" className={estilosLink}>
                 Contato
             </Link>
-            {usuario && (usuario.isAdm && (
-                <Link to="/adm" className={estilosLink}>
-                    Administrador
+            <Link to="/login" className={estilosLink}>
+                Login
+            </Link>
+            {usuario?.isAdm && (
+                <Link to="/adm" className={`${estilosLink} justify-self-end`}>
+                    Adiministrador
                 </Link>
-            ))}
+            )}
 
         </nav>
     );

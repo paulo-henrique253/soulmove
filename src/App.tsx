@@ -26,6 +26,7 @@ import ListaConquistas from "./pages/adm/ListaConquistas"
 import ListaMissoes from "./pages/adm/ListaMissoes"
 import EditarConquista from "./pages/adm/EditarConquista"
 import EditarMissao from "./pages/adm/EditarMissao"
+import Login from "./pages/Login"
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path="/integrantes/:slug" element={<Integrante />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/adm/novaMissao" element={<NovaMissao />} />
         <Route path="/adm/novaConquista" element={<NovaConquista />} />
         <Route path="/adm/conquistas" element={<ListaConquistas />} />

@@ -41,7 +41,7 @@ function SmLogin() {
   }
 
   if (usuario){
-    navigate("/appPerfil");
+    navigate("/appInicio");
   }
 
   function navegarCadastro(){

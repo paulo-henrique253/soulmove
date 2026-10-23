@@ -2,10 +2,17 @@ import { Link } from "react-router";
 import type { TipoConquista } from "../../types/conquista";
 import { useEffect, useState } from "react";
 import { ListarConquistas } from "../../service/conquista";
-
+import { useUsuario } from '../../hooks/useUsuario';
+import { useNavigate } from 'react-router';
 
 export default function ListaConquistas() {
 
+
+
+  const {usuario} = useUsuario();
+	const navigate = useNavigate();
+
+	if(!usuario?.isAdm){ navigate("/")}
 
     const [conquistas, setConquistas] = useState<TipoConquista[]>([]);
     const [carregando, setCarregando] = useState(true);

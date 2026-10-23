@@ -2,13 +2,20 @@ import { Link } from "react-router";
 import type { TipoMissao } from "../../types/missao"; // Ajuste o caminho conforme seu projeto
 import { useEffect, useState } from "react";
 import { ListarMissoes } from "../../service/missao"; // Ajuste o caminho conforme seu projeto
-
+import { useUsuario } from '../../hooks/useUsuario';
+import { useNavigate } from 'react-router';
 
 export default function ListaMissoes() {
 
     const [missoes, setMissoes] = useState<TipoMissao[]>([]);
     const [carregando, setCarregando] = useState(true);
     const [erro, setErro] = useState<string | null>(null);
+
+
+    const {usuario} = useUsuario();
+	const navigate = useNavigate();
+
+	if(!usuario?.isAdm){ navigate("/")}
 
     useEffect(() => {
         async function carregar() {
