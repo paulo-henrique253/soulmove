@@ -25,6 +25,7 @@ import PainelAdmin from "./pages/adm/PainelAdmin"
 import ListaConquistas from "./pages/adm/ListaConquistas"
 import ListaMissoes from "./pages/adm/ListaMissoes"
 import EditarConquista from "./pages/adm/EditarConquista"
+import EditarMissao from "./pages/adm/EditarMissao"
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path="/adm/conquistas" element={<ListaConquistas />} />
         <Route path="/adm/missoes" element={<ListaMissoes />} />
         <Route path="/adm/conquistas/:conquistaId" element={<EditarConquista />} />
+        <Route path="/adm/missoes/:missaoId" element={<EditarMissao />} />
         <Route path="/adm" element={<PainelAdmin />} />
         
 

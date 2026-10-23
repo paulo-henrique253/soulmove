@@ -173,14 +173,14 @@ function EditarConquista () {
                   className="self-center px-8 py-4 mt-4 bg-linear-to-r from-indigo-500 to-sky-400 text-white font-['Lexend_Deca'] font-bold rounded-full hover:opacity-90 transition-opacity w-full sm:w-auto"
                   disabled={isSubmitting}
                 >
-                {isSubmitting? "Editando..." : (editado? "Editado!" : "Editar")}
+                {isSubmitting? "Editando..." : (editado? "Conquista Editada!" : "Editar Conquista")}
                 </button>
                 <button 
                   type="button"
                   onClick={() => setMostrarModalExclusao(true)}
-                  className="self-center px-8 py-4 mt-4 bg-linear-to-r from-indigo-500 to-sky-400 text-white font-['Lexend_Deca'] font-bold rounded-full hover:opacity-90 transition-opacity w-full sm:w-auto"
+                  className="self-center px-8 py-4 bg-white border-2 border-rose-500 text-rose-500 font-['Lexend_Deca'] font-bold rounded-full hover:bg-rose-50 transition-colors w-full sm:w-auto"
                 >
-                  {excluindo? "Excluindo..." : "Excluir"}
+                  {excluindo? "Excluindo..." : "Excluir Conquista"}
                 </button>
               </div>
           </form>

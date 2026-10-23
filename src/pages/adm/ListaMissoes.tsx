@@ -163,7 +163,7 @@ export default function ListaMissoes() {
 
                   <td className="py-4 px-6 whitespace-nowrap">
                     <Link 
-                      to={`/adm/missao/lista/${missao.id}`}
+                      to={`/adm/missoes/${missao.id}`}
                       className="text-indigo-600 font-bold hover:text-sky-500 hover:underline transition-colors"
                     >
                       {missao.titulo}
