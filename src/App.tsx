@@ -18,6 +18,7 @@ import SmRecarga from "./pages/app/SmRecarga"
 import SmConquistas from "./pages/app/SmConquistas"
 import AppLayout from "./layouts/AppLayout"
 import SmLogin from "./pages/app/SmLogin";
+import NovaMissao from "./pages/adm/NovaMissao";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/integrantes/:slug" element={<Integrante />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/adm/missao" element={<NovaMissao />} />
 
         <Route element={<AppLayout />}>
           <Route path="/appInicio" element={<SmInicio />} />
