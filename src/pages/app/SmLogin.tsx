@@ -41,7 +41,11 @@ function SmLogin() {
   }
 
   if (usuario){
-    navigate("/appPerfil");
+    navigate("/appInicio");
+  }
+
+  function navegarCadastro(){
+    navigate("/appCadastro")
   }
   
   return (
@@ -72,11 +76,18 @@ function SmLogin() {
               <ErroLabel message={errors.senha.message}/>
             )}
             {erro && (<ErroLabel message={erro} />)}
-            <button
-              type="submit"
-              className="cursor-pointer self-center px-8 py-4 bg-linear-to-r from-indigo-500 to-sky-400 text-white font-['Lexend_Deca'] font-bold rounded-full"
-              disabled={isSubmitting}
-            >{isSubmitting? "entrando..." : "entrar"}</button>
+            <div className="flex justify-evenly">
+              <button
+                type="submit"
+                className="cursor-pointer self-center px-8 py-4 bg-linear-to-r from-indigo-500 to-sky-400 text-white font-['Lexend_Deca'] font-bold rounded-full"
+                disabled={isSubmitting}
+              >{isSubmitting? "Entrando..." : "Entrar"}</button>
+              <button
+                type="button"
+                onClick={navegarCadastro}
+                className="cursor-pointer self-center px-8 py-4 bg-linear-to-r from-indigo-500 to-sky-400 text-white font-['Lexend_Deca'] font-bold rounded-full"
+              >Criar uma conta</button>
+            </div>
         </div>
       </form>
     </article>

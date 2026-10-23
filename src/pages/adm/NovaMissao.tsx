@@ -3,6 +3,11 @@ import ContatoInput from '../../components/ContatoInput';
 import { useForm } from 'react-hook-form';
 import { cadastrar } from '../../service/missao';
 import ContatoTextarea from '../../components/ContatoTextarea';
+import ContatoSelect from '../../components/ContatoSelect';
+import ErroLabel from '../../components/app/ErroLabel';
+import { useState } from 'react';
+import { useUsuario } from '../../hooks/useUsuario';
+import { useNavigate } from 'react-router';
 
 export type NovaMissaoFormData = {
     titulo: string,
@@ -18,8 +23,13 @@ export type NovaMissaoFormData = {
 
 function NovaMissao(){
 
-    const {register, handleSubmit, formState: { isSubmitting, errors } } = useForm<NovaMissaoFormData>()
+    const {usuario} = useUsuario();
+	const navigate = useNavigate();
 
+	if(!usuario?.isAdm){ navigate("/")}
+
+    const {register, handleSubmit, formState: { isSubmitting, errors } } = useForm<NovaMissaoFormData>()
+    const [erro, setErro] = useState<string | null>();
 
     async function onSubmit (data: NovaMissaoFormData){
 
@@ -37,8 +47,11 @@ function NovaMissao(){
 
 
         try {
-            cadastrar(formData)
+            await cadastrar(formData)
         } catch (error) {
+            if (error instanceof Error){
+                setErro(error.message);
+            }
             console.error('Erro de conexão:', error);
         }
 
@@ -61,14 +74,18 @@ function NovaMissao(){
                             {...register("titulo", { required: "Informe o título da missão." })}
                         />
 
-                        <ContatoInput
+                        <ContatoSelect
                             id="nomeTipo"
                             label="Tipo da Missão"
-                            type="text"
-                            placeholder="Ex: Sustentabilidade"
                             erro={errors.nomeTipo?.message}
-                            {...register("nomeTipo", { required: "Informe o tipo da missão." })}
-                        />
+                            {...register("nomeTipo", { required: "Selecione o tipo da missão." })}
+                            defaultValue="" // Garante que comece no placeholder
+                        >
+                            <option value="" disabled hidden>Selecione um tipo...</option>
+                            <option value="economia_co2">Economia de CO2</option>
+                            <option value="quantidade_missoes">Quantidade de Missões</option>
+                            <option value="trajeto_longo">Trajeto Longo</option>
+                        </ContatoSelect>
 
                         <ContatoTextarea
                             id="descricao"
@@ -78,7 +95,6 @@ function NovaMissao(){
                             {...register("descricao", { required: "Escreva a descrição da missão." })}
                         />
 
-                        {/* Grid para agrupar os campos numéricos lado a lado */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <ContatoInput
                                 id="pontos"
@@ -88,7 +104,7 @@ function NovaMissao(){
                                 erro={errors.pontos?.message}
                                 {...register("pontos", { 
                                     required: "Informe a pontuação.",
-                                    valueAsNumber: true // Garante que o react-hook-form retorne number
+                                    valueAsNumber: true 
                                 })}
                             />
 
@@ -140,7 +156,9 @@ function NovaMissao(){
                             {...register("arquivoImagem", { required: "Selecione uma imagem." })}
                             className="file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100 cursor-pointer"
                         />
-
+                        {
+                            erro && (<ErroLabel message= {erro} />)
+                        }
                         <button
                             type="submit"
                             className="cursor-pointer self-center px-8 py-4 mt-2 bg-linear-to-r from-indigo-500 to-sky-400 text-white font-['Lexend_Deca'] font-bold rounded-full hover:opacity-90 transition-opacity"
@@ -151,7 +169,6 @@ function NovaMissao(){
                     </form>
                 </div>
 
-                {/* Seção lateral adaptada. Removi a altura fixa (h-104) para acompanhar o tamanho dinâmico do formulário novo */}
                 <div className="hidden w-full max-w-md flex-col gap-6 self-start lg:flex">
                     <h2 className="font-['Momo_Trust_Display'] text-3xl text-indigo-600">
                         Nova Missão SoulMove

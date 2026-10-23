@@ -1,7 +1,7 @@
 import type { LoginFormValues } from "../pages/app/SmLogin";
 import type { ErrorResponse } from "../types/ErrorResponse";
 import type { Usuario } from "../types/usuario";
-
+import type { CadastroFormValues } from "../pages/app/SmCadastro";
 const baseURL = import.meta.env.VITE_API_URL;
 export const API = `${baseURL}/api/v1/usuario`;
 
@@ -29,5 +29,24 @@ export async function login(dados: LoginFormValues): Promise<Usuario> {
         throw new Error("Email ou senha inválidos");
     }
     
+    return usuario;
+}
+
+export async function cadastrar(dados: CadastroFormValues): Promise<Usuario>{
+    const resposta = await fetch(`${API}`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(dados), 
+    });
+
+    if (!resposta.ok){
+        const erro: ErrorResponse = await resposta.json();
+        throw new Error("Falha ao cadastrar: " + erro.error + ":\n" + erro.message);
+        
+    }
+
+    const usuario: Usuario = await resposta.json();
     return usuario;
 }

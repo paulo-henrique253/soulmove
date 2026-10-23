@@ -19,6 +19,14 @@ import SmConquistas from "./pages/app/SmConquistas"
 import AppLayout from "./layouts/AppLayout"
 import SmLogin from "./pages/app/SmLogin";
 import NovaMissao from "./pages/adm/NovaMissao";
+import SmCadastro from "./pages/app/SmCadastro"
+import NovaConquista from "./pages/adm/NovaConquista"
+import PainelAdmin from "./pages/adm/PainelAdmin"
+import ListaConquistas from "./pages/adm/ListaConquistas"
+import ListaMissoes from "./pages/adm/ListaMissoes"
+import EditarConquista from "./pages/adm/EditarConquista"
+import EditarMissao from "./pages/adm/EditarMissao"
+import Login from "./pages/Login"
 
 function App() {
   return (
@@ -32,7 +40,15 @@ function App() {
         <Route path="/integrantes/:slug" element={<Integrante />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/faq" element={<Faq />} />
-        <Route path="/adm/missao" element={<NovaMissao />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/adm/novaMissao" element={<NovaMissao />} />
+        <Route path="/adm/novaConquista" element={<NovaConquista />} />
+        <Route path="/adm/conquistas" element={<ListaConquistas />} />
+        <Route path="/adm/missoes" element={<ListaMissoes />} />
+        <Route path="/adm/conquistas/:conquistaId" element={<EditarConquista />} />
+        <Route path="/adm/missoes/:missaoId" element={<EditarMissao />} />
+        <Route path="/adm" element={<PainelAdmin />} />
+        
 
         <Route element={<AppLayout />}>
           <Route path="/appInicio" element={<SmInicio />} />
@@ -44,6 +60,7 @@ function App() {
           <Route path="/appRecarga" element={<SmRecarga />} />
           <Route path="/appConquistas" element={<SmConquistas />} />
           <Route path="/appLogin" element={<SmLogin />}/>
+          <Route path="/appCadastro" element={<SmCadastro />} />
         </Route>
       </Route>
     </Routes>

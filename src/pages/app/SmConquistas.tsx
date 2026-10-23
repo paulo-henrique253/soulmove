@@ -4,7 +4,7 @@ import FooterApp from "../../components/app/FooterApp"
 import HeaderApp from "../../components/app/HeaderApp"
 import Notificacao from "../../components/app/Notificacao"
 import type { TipoConquista } from "../../types/conquista"
-import { ListarConquistas } from "../../service/conquista"
+import { ListarConquistasUsuario } from "../../service/conquista"
 import { useEffect, useState } from "react"
 import { useUsuario } from '../../hooks/useUsuario';
 import { Navigate } from 'react-router';
@@ -14,6 +14,7 @@ function SmConquistas() {
         if(!usuario){
         return <Navigate to={'/applogin'} />;
     }
+    
     const [conquistas, setConquistas] = useState<TipoConquista[]>([]);
     const [carregando, setCarregando] = useState(true);
     const [erro, setErro] = useState<string | null>(null);
@@ -26,8 +27,9 @@ function SmConquistas() {
             setErro("");
 
             try {
-
-                setConquistas(await ListarConquistas());
+                if(usuario){
+                    setConquistas(await ListarConquistasUsuario(usuario.id));
+                }
 
             } catch (erro) {
                 

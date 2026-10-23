@@ -3,6 +3,7 @@ export type TipoMissao = {
     titulo: string,
     descricao: string,
     prazo: string,
+    periodicidade: string,
     pontos: string,
     linkImagem:string,
     meta: number,
