@@ -1,6 +1,5 @@
 import { Link } from "react-router";
 import { useUsuario } from "../hooks/useUsuario";
-import { usuario } from '../data/usuario';
 
 type MenuNavegacaoProps = {
     trocarMenu: () => void;

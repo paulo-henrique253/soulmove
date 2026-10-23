@@ -1,11 +1,13 @@
 import type { TipoConquista } from "../types/conquista";
 
-export const API = "https://soulmove-java-3.onrender.com/api/v1/conquista"
+
+const BASE_URL = import.meta.env.VITE_API_URL;
+export const API = BASE_URL + "/api/v1/conquista"
 
 
-export async function ListarConquistas(): Promise<TipoConquista[]>{
+export async function ListarConquistas(usuarioId: number): Promise<TipoConquista[]>{
 
-    const resposta = await fetch(API);
+    const resposta = await fetch(`${API}/usuario/${usuarioId}`);
 
     if (!resposta.ok){
         throw new Error(`Erro HTTP: ${resposta.status}`)

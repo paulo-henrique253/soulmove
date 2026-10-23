@@ -14,6 +14,7 @@ function SmConquistas() {
         if(!usuario){
         return <Navigate to={'/applogin'} />;
     }
+    
     const [conquistas, setConquistas] = useState<TipoConquista[]>([]);
     const [carregando, setCarregando] = useState(true);
     const [erro, setErro] = useState<string | null>(null);
@@ -26,8 +27,9 @@ function SmConquistas() {
             setErro("");
 
             try {
-
-                setConquistas(await ListarConquistas());
+                if(usuario){
+                    setConquistas(await ListarConquistas(usuario.id));
+                }
 
             } catch (erro) {
                 
