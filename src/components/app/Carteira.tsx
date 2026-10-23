@@ -1,9 +1,10 @@
 import { Link } from "react-router";
 import Saldo from "./Saldo";
-import { usuario } from "../../data/usuario";
+import { useUsuario } from "../../hooks/useUsuario";
 
 
 function Carteira() {
+    const { usuario } = useUsuario()
     return (
         <article className="relative overflow-hidden bg-linear-to-r to-sky-400 from-indigo-500 p-5 text-white rounded-2xl drop-shadow-md/50 mt-6 mb-7 mr-2 ml-2">
 
@@ -19,8 +20,8 @@ function Carteira() {
 
 
                 <div className="flex gap-5">
-                    <Saldo saldo={usuario.saldoLuz} descricao="Em desconto na conta de energia." />
-                    <Saldo saldo={usuario.saldoMobilidade} descricao="Em desconto no transporte público." />
+                    <Saldo saldo={0} descricao="Em desconto na conta de energia." />
+                    <Saldo saldo={usuario? usuario.saldo : 0} descricao="Em desconto no transporte público." />
                 </div>
 
                 <div className="mt-3 flex justify-center">

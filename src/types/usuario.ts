@@ -4,5 +4,6 @@ export type Usuario = {
     email: string,
     titulo: string,
     pontos: string,
-    
+    saldo: number
+
 }

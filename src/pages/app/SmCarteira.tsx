@@ -2,8 +2,9 @@ import { Link, Navigate } from 'react-router';
 import BotaoBola from "../../components/app/BotaoBola";
 import Saldo from "../../components/app/Saldo";
 import SessaoCarteira from "../../components/app/SessaoCarteira";
-import { usuario } from "../../data/usuario";
+import { useUsuario } from '../../hooks/useUsuario';
 function SmCarteira() {
+    const {usuario} = useUsuario()
     if(!usuario){
         return <Navigate to={'/applogin'} />;
     }
@@ -40,8 +41,8 @@ function SmCarteira() {
             </div>
             
             <div className="flex gap-10">
-                <Saldo saldo= {usuario.saldoLuz} descricao="Em desconto na conta de energia."/>
-                <Saldo saldo= {usuario.saldoMobilidade} descricao="Em desconto no transporte público."/>
+                <Saldo saldo= {0} descricao="Em desconto na conta de energia."/>
+                <Saldo saldo= {usuario.saldo} descricao="Em desconto no transporte público."/>
             </div>
         </div>
 
