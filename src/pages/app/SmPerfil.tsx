@@ -1,10 +1,17 @@
-import { Link } from "react-router"
-import { usuario } from "../../data/usuario"
+import { Link, Navigate } from "react-router"
 import UsuarioNumeros from "../../components/app/UsuarioNumeros"
+import { useUsuario } from "../../hooks/useUsuario";
+import coelho from "../../assets/dani.png"
 
 const estiloPosts = "rounded-xl w-40"
 
 function SmPerfil() {
+    const {usuario} = useUsuario();
+
+    if(!usuario){
+    return <Navigate to={'/applogin'} />;
+    }
+
     return (
         <article>
 
@@ -13,22 +20,22 @@ function SmPerfil() {
                     <img src="/src/assets/setadireitapreta.png" alt="Seta para voltar" className="-scale-x-100 w-5" />
                 </Link>
 
-                <h1 className="text-gray-400 font-[Lexend_Deca] text-2xl my-7">@{usuario.usuario}</h1>
+                <h1 className="text-gray-400 font-[Lexend_Deca] text-2xl my-7">@{usuario.nome}</h1>
 
                 <div className="flex gap-2 items-center justify-center">
-                    <img src={usuario.fotoPfp} alt="foto de perfil do usuário" className="w-30 rounded-full border-2 border-gray-200"/>
+                    <img src={coelho} alt="foto de perfil do usuário" className="w-30 rounded-full border-2 border-gray-200"/>
 
                     <div className="flex flex-col gap-2">
-                        <h2 className="font-[Momo_Trust_Display]">{usuario.nomeExibicao}</h2>
+                        <h2 className="font-[Momo_Trust_Display]">{usuario.nome}</h2>
                         <p className="font-[Lexend_Deca] text-indigo-500 text-[0.7rem]">{usuario.titulo}</p>
-                        <p className="font-[Lexend_Deca] text-gray-400 text-[0.7rem]">{usuario.descricao}</p>
+                        <p className="font-[Lexend_Deca] text-gray-400 text-[0.7rem]">{"sem descricao no momento"}</p>
                     </div>
                 </div>
 
                 <div className="flex items-center justify-around mt-4">
-                    <UsuarioNumeros numero={usuario.nPosts} descricao="posts" />
-                    <UsuarioNumeros numero={usuario.seguidores} descricao="seguidores" />
-                    <UsuarioNumeros numero={usuario.seguindo} descricao="seguindo" />
+                    <UsuarioNumeros numero={5} descricao="posts" />
+                    <UsuarioNumeros numero={67} descricao="seguidores" />
+                    <UsuarioNumeros numero={69} descricao="seguindo" />
                 </div>
             </section>
 

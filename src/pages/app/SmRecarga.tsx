@@ -2,10 +2,17 @@ import { Link } from "react-router"
 import BotaoPix from "../../components/app/BotaoPix"
 import CaixaPix from "../../components/app/CaixaPix"
 import CardSaldo from "../../components/app/CardSaldo"
-import { usuario } from "../../data/usuario";
 import ItemLista from "../../components/app/ItemLista";
+import { Navigate } from 'react-router';
+import { useUsuario } from '../../hooks/useUsuario';
+
 
 function SmRecarga() {
+    const {usuario} = useUsuario();
+
+    if(!usuario){
+        return <Navigate to={'/applogin'} />;
+    }
     return (
         
         <article className="bg-indigo-500 -m-4 p-5 pt-15">
@@ -20,7 +27,7 @@ function SmRecarga() {
               
             </div>
       
-            <CardSaldo saldo={usuario.saldoMobilidade}/>
+            <CardSaldo saldo={123}/>
 
             <section className="bg-white -mx-5 rounded-t-4xl p-7 flex flex-col gap-10">
                 <h3 className="text-indigo-500 font-[Lexend_Deca]">Quando o saldo estiver liberado</h3>

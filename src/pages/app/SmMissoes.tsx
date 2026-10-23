@@ -6,8 +6,16 @@ import type { TipoMissao } from "../../types/missao"
 import Missao from "../../components/app/Missao"
 import Notificacao from "../../components/app/Notificacao"
 import { ListarMissoes } from "../../service/missao"
+import { Navigate } from 'react-router';
+import { useUsuario } from '../../hooks/useUsuario';
 
 function SmMissoes() {
+    const {usuario} = useUsuario();
+
+
+    if(!usuario){
+        return <Navigate to={'/applogin'} />;
+    }
     const [missoes, setMissoes] = useState<TipoMissao[]>([]);
     const [carregando, setCarregando] = useState(true);
     const [erro, setErro] = useState<string | null>(null);

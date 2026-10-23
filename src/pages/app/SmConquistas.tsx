@@ -6,8 +6,14 @@ import Notificacao from "../../components/app/Notificacao"
 import type { TipoConquista } from "../../types/conquista"
 import { ListarConquistas } from "../../service/conquista"
 import { useEffect, useState } from "react"
-
+import { useUsuario } from '../../hooks/useUsuario';
+import { Navigate } from 'react-router';
 function SmConquistas() {
+    const {usuario} = useUsuario();
+
+        if(!usuario){
+        return <Navigate to={'/applogin'} />;
+    }
     const [conquistas, setConquistas] = useState<TipoConquista[]>([]);
     const [carregando, setCarregando] = useState(true);
     const [erro, setErro] = useState<string | null>(null);
