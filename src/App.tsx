@@ -21,6 +21,7 @@ import SmLogin from "./pages/app/SmLogin";
 import NovaMissao from "./pages/adm/NovaMissao";
 import SmCadastro from "./pages/app/SmCadastro"
 import NovaConquista from "./pages/adm/NovaConquista"
+import PainelAdmin from "./pages/adm/PainelAdmin"
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="/faq" element={<Faq />} />
         <Route path="/adm/missao" element={<NovaMissao />} />
         <Route path="/adm/conquista" element={<NovaConquista />} />
+        <Route path="/adm" element={<PainelAdmin />} />
         
 
         <Route element={<AppLayout />}>
