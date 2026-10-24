@@ -25,7 +25,7 @@ function Missao( {missao}: MissaoProps) {
 
                 <div className="flex">
                     <div className="flex flex-col gap-1 justify-center items-center">
-                        <Link to="/appMissao" className="text-indigo-500 text-xl font-[Momo_Trust_Display] bg-white px-6 py-3.5 rounded-2xl">Vamos lá?</Link>
+                        <Link to={`/appMissoes/${missao.id}`} className="text-indigo-500 text-xl font-[Momo_Trust_Display] bg-white px-6 py-3.5 rounded-2xl">Vamos lá?</Link>
                         <p className="text-white font-[Lexend_Deca] underline text-[0.8rem]">{missao.prazo} dias</p>
                     </div>
 
