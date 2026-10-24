@@ -1,19 +1,20 @@
-import { usuario } from "../../data/usuario";
+import { useUsuario } from "../../hooks/useUsuario";
 import Saldo from "./Saldo";
 
 type CardSaldoProps = {
     saldo: number
 }
 
-let disponivel = false
-
-if (usuario.saldoMobilidade >= 10) {
-    disponivel = true
-}
-
 function CardSaldo({ saldo }: CardSaldoProps) {
+    const { usuario } = useUsuario()
+    
+    let disponivel = false
 
-    saldo = usuario.saldoMobilidade
+    if ( usuario && usuario.saldo >= 10) {
+        disponivel = true
+    }
+    
+    if (usuario && usuario.saldo) {saldo = usuario.saldo}
     const faltante = 10 - saldo
 
     return (

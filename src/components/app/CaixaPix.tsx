@@ -1,12 +1,16 @@
 import { usuario } from "../../data/usuario";
-
-let disponivel = false
-
-if (usuario.saldoMobilidade >= 10) {
-    disponivel = true 
-}
+import { useUsuario } from "../../hooks/useUsuario";
 
 function CaixaPix() {
+    
+    const { usuario } = useUsuario()
+
+    let disponivel = false
+
+    if (usuario && usuario.saldo >= 10) {
+        disponivel = true 
+    }
+
     return (
         <article className="flex flex-col justify-center items-center gap-4 w-full">
             <div className="bg-indigo-500 drop-shadow-md/50 flex flex-col p-4 rounded-2xl w-full">
