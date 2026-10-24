@@ -8,6 +8,7 @@ import Notificacao from "../../components/app/Notificacao"
 import { ListarMissoes } from "../../service/missao"
 import { Navigate } from 'react-router';
 import { useUsuario } from '../../hooks/useUsuario';
+import SmIcon from "../../assets/smicon.png";
 
 function SmMissoes() {
     const {usuario} = useUsuario();
@@ -98,7 +99,7 @@ function SmMissoes() {
 
 
             <div className="bg-linear-to-t to-sky-200 from-indigo-300 -mx-4 px-5  border-gray-300 border-t-2">
-                <Notificacao diretorio="#" texto="Você tem 2 missões diárias disponíveis!" imagem="/src/assets/smicon.png" alt="legenda sabor"/>
+                <Notificacao diretorio="#" texto="Você tem 2 missões diárias disponíveis!" imagem={SmIcon} alt="legenda sabor"/>
 
                 {/* temporario */}
                 <div className="flex flex-col">

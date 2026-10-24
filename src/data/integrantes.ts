@@ -1,3 +1,10 @@
+import Zeni from "../assets/zeni.png";
+import Jac from "../assets/jac.png";
+import Felle from "../assets/ju.png";
+import Ph from "../assets/ph.png";
+import Dani from "/src/assets/dani.png";
+
+
 export type Integrante = {
   nome: string;
   slug: string;
@@ -15,7 +22,7 @@ export const integrantes: Integrante[] = [
     slug: "enzo",
     turma: "1TDSPK",
     rm: "RM570653",
-    foto: "/src/assets/zeni.png",
+    foto: Zeni,
     github: "https://github.com/F-Zeni",
     linkedin: "https://www.linkedin.com/in/enzo-fachinelli-zeni-687a873b3",
     sobre: "Tenho interesse em tecnologia, programação e banco de dados. Busco sempre aprimorar meus conhecimentos, aprender novas tecnologias e evoluir profissionalmente",
@@ -25,7 +32,7 @@ export const integrantes: Integrante[] = [
     slug: "jacqueline",
     turma: "1TDSPK",
     rm: "RM571390",
-    foto: "/src/assets/jac.png",
+    foto: Jac,
     github: "https://github.com/jacquelot",
     linkedin: "https://br.linkedin.com/in/jacqueline-lotufo",
     sobre: "Sou designer e atualmente estudo programação. Gosto de criar, entender como as coisas funcionam e explorar formas de conectar tecnologia, design e saúde.",
@@ -35,7 +42,7 @@ export const integrantes: Integrante[] = [
     slug: "julia",
     turma: "1TDSPK",
     rm: "RM569098",
-    foto: "/src/assets/ju.png",
+    foto: Felle,
     github: "https://github.com/lixzaura",
     linkedin: "https://www.linkedin.com/in/lixzaura",
     sobre: "Sou ilutradora e atualmente estou entrando no ramo da programação, esotu gostando muito de estudar e pretendo focar totalmente em backend.",
@@ -45,7 +52,7 @@ export const integrantes: Integrante[] = [
     slug: "paulo",
     turma: "1TDSPK",
     rm: "RM573806",
-    foto: "/src/assets/ph.png",
+    foto: Ph,
     github: "https://github.com/paulo-henrique253",
     linkedin: "https://www.linkedin.com/in/paulo-henrique-gomes-gon%C3%A7alves-aa04b5272/",
     sobre: "Gosto de estudar programação e outros idiomas. Atualmente estou focando em backend e em estudar japonês.",
@@ -55,7 +62,7 @@ export const integrantes: Integrante[] = [
     slug: "danielle",
     turma: "1TDSPK",
     rm: "RM569359",
-    foto: "/src/assets/dani.png",
+    foto: Dani,
     github: "https://github.com/daniellekgn",
     linkedin: "https://www.linkedin.com/in/danielle-fernanda-kagan-9026b141b/",
     sobre: "Tenho interesse em tecnologia, desenvolvimento de interfaces e UX-UI. Atualmente também estou gostando bastante de trabalhar com Back-end.",

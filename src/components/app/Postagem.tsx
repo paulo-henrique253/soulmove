@@ -1,3 +1,5 @@
+import Pontinhos from "../../assets/pontinhos.png";
+
 type PostagemProps = {
     icon: string
     usuario: string
@@ -14,7 +16,7 @@ function Postagem( {icon, usuario, tempo, imagem}: PostagemProps) {
                 <p className="font-[Lexend_Deca] text-sm">{usuario}</p>
                 <p className="font-[Lexend_Deca] text-[0.6rem] opacity-70">{tempo}</p>
             </div>
-                <button className="ml-auto"><img src="/src/assets/pontinhos.png" alt="3 pontinhos" className="w-5 ml-auto"/></button>
+                <button className="ml-auto"><img src={Pontinhos} alt="3 pontinhos" className="w-5 ml-auto"/></button>
         </div> 
             <img src={imagem} alt="Imagem da postagem" className=""/>
         </article>

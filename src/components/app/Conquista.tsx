@@ -1,4 +1,5 @@
 import type { TipoConquista } from "../../types/conquista";
+import RelogioMissao from "../../assets/relogio_missao.png";
 
 type ConquistaProps = {
     conquista: TipoConquista;
@@ -14,7 +15,7 @@ function Conquista({ conquista }: ConquistaProps) {
                     
                 </div>
 
-                <img src="/src/assets/relogio_missao.png" alt="Icone de progresso" className="w-8 h-8 ml-auto"/>
+                <img src={RelogioMissao} alt="Icone de progresso" className="w-8 h-8 ml-auto"/>
 
             </div>
 

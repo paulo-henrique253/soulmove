@@ -1,3 +1,5 @@
+import SetaDireitaPreta from "../../assets/setadireitapreta.png"
+
 type SessaoCarteiraProps = {
     icone: string
     alt: string
@@ -13,7 +15,7 @@ function SessaoCarteira( {icone, alt, titulo, descricao}: SessaoCarteiraProps) {
                 <h3  className="font-[Lexend_Deca] text-[0.7rem]">{titulo}</h3>
                 <p className="font-[Lexend_Deca] text-[0.7rem]">{descricao}</p>
             </div>
-            <img src="/src/assets/setadireitapreta.png" alt="Seta para a esquerda." className="w-3 h-3" />
+            <img src={SetaDireitaPreta} alt="Seta para a esquerda." className="w-3 h-3" />
         </div>   
     );
 }

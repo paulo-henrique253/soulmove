@@ -3,7 +3,6 @@ import type { TipoConquista } from "../../types/conquista";
 import { useEffect, useState } from "react";
 import { ListarConquistas } from "../../service/conquista";
 import { useUsuario } from '../../hooks/useUsuario';
-import { useNavigate } from 'react-router';
 
 export default function ListaConquistas() {
 

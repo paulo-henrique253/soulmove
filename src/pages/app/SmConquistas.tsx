@@ -8,6 +8,8 @@ import { ListarConquistasUsuario } from "../../service/conquista"
 import { useEffect, useState } from "react"
 import { useUsuario } from '../../hooks/useUsuario';
 import { Navigate } from 'react-router';
+import SmIcon from "../../assets/smicon.png";
+
 function SmConquistas() {
     const {usuario} = useUsuario();
 
@@ -96,7 +98,7 @@ function SmConquistas() {
             <AreaSm />
 
             <div className="bg-linear-to-t to-sky-200 from-indigo-300 -mx-4 px-5  border-gray-300 border-t-2">
-                <Notificacao diretorio="#" texto="Você completou 4 conquistas!" imagem="/src/assets/smicon.png" alt="legenda sabor"/>
+                <Notificacao diretorio="#" texto="Você completou 4 conquistas!" imagem={SmIcon} alt="icone do onibus"/>
 
                  <div className="flex flex-col">
                     {conquistas.map((conquista) => (
