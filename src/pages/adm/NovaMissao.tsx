@@ -47,6 +47,7 @@ function NovaMissao(){
 
         try {
             await cadastrar(formData)
+            setErro("Cadastrado com sucesso");
         } catch (error) {
             if (error instanceof Error){
                 setErro(error.message);
