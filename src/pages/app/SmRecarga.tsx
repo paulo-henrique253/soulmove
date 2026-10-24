@@ -5,6 +5,7 @@ import CardSaldo from "../../components/app/CardSaldo"
 import ItemLista from "../../components/app/ItemLista";
 import { Navigate } from 'react-router';
 import { useUsuario } from '../../hooks/useUsuario';
+import SetaEsquerda from "../../assets/setaesquerda.png";
 
 
 function SmRecarga() {
@@ -18,7 +19,7 @@ function SmRecarga() {
         <article className="bg-indigo-500 -m-4 p-5 pt-15">
             <div className="flex gap-3 items-center">
             <Link to="/appCarteira">
-            <img src="/src/assets/setaesquerda.png" alt="Seta para voltar." className="w-4"/>
+            <img src={SetaEsquerda} alt="Seta para voltar." className="w-4"/>
             </Link>
                 <div className="flex flex-col">
                     <h1 className="font-[Momo_Trust_Display]  text-white text-lg">Recarregar Bilhete Único</h1>

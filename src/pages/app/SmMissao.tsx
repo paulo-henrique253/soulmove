@@ -6,6 +6,8 @@ import HeaderApp from "../../components/app/HeaderApp"
 import { useUsuario } from "../../hooks/useUsuario"
 import { ObterMissao } from "../../service/missao"
 import type { TipoMissao } from "../../types/missao"
+import SetaEsquerda from "../../assets/setaesquerda.png"
+import IconDocRoxo from "../../assets/icondocroxo.png" 
 
 function SmMissao() {
     const { slug } = useParams();
@@ -71,7 +73,7 @@ function SmMissao() {
                 {/* Seta voltar + Imagem da missão */}
                 <div className="relative w-full">
                     <Link to="/appMissoes" className="absolute top-4 left-4 z-10">
-                        <img src="/src/assets/setaesquerda.png" alt="Voltar" className="w-8" />
+                        <img src={SetaEsquerda} alt="Voltar" className="w-8" />
                     </Link>
                     <img
                         src={missao.linkImagem}
@@ -100,7 +102,7 @@ function SmMissao() {
                     <p className="text-transparent bg-clip-text bg-linear-to-r from-indigo-500 to-sky-400 font-[Momo_Trust_Display] text-lg">
                         Comprove<br />sua ação!
                     </p>
-                    <img src="/src/assets/icondocroxo.png" alt="Ícone de upload" className="w-14 mt-1" />
+                    <img src={IconDocRoxo} alt="Ícone de upload" className="w-14 mt-1" />
                     <p className="text-gray-400 font-[Lexend_Deca] text-sm mt-1">max. de 50mb</p>
                 </button>
 

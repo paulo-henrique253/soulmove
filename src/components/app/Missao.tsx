@@ -1,5 +1,6 @@
 import { Link } from "react-router"
 import type { TipoMissao } from "../../types/missao";
+import RelogioMissao from "../../assets/relogio_missao.png";
 
 type MissaoProps = {
     missao: TipoMissao;
@@ -18,7 +19,7 @@ function Missao( {missao}: MissaoProps) {
                         <h2 className="text-white font-[Momo_Trust_Display] text-xl">{missao.titulo}</h2>
                         <div className="border-white border-t-2 rounded-2xl"></div>
                     </div>
-                    <img src="/src/assets/relogio_missao.png" alt="Indicação de conclusão." className="w-8 ml-auto"/>
+                    <img src={RelogioMissao} alt="Indicação de conclusão." className="w-8 ml-auto"/>
                 </div> 
 
                 <p className="text-white font-[Lexend_Deca] text-[0.8rem] max-w-60 leading-4 mb-5">{missao.descricao}</p>

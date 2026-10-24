@@ -1,7 +1,12 @@
 import { Link, Navigate } from "react-router"
 import UsuarioNumeros from "../../components/app/UsuarioNumeros"
 import { useUsuario } from "../../hooks/useUsuario";
-import coelho from "../../assets/dani.png"
+import coelho from "../../assets/siricutico.png"
+import SetaDireitaPreta from "../../assets/setadireitapreta.png";
+import Postd1 from "/src/assets/postd1.png"
+import Postd2 from "/src/assets/postd2.png"
+import Postd3 from "/src/assets/postd3.png"
+import Postd4 from "/src/assets/postd4.png"
 
 const estiloPosts = "rounded-xl w-40"
 
@@ -17,7 +22,7 @@ function SmPerfil() {
 
             <section>
                 <Link to="/appInicio">
-                    <img src="/src/assets/setadireitapreta.png" alt="Seta para voltar" className="-scale-x-100 w-5" />
+                    <img src={SetaDireitaPreta} alt="Seta para voltar" className="-scale-x-100 w-5" />
                 </Link>
 
                 <h1 className="text-gray-400 font-[Lexend_Deca] text-2xl my-7">@{usuario.nome}</h1>
@@ -49,10 +54,10 @@ function SmPerfil() {
                 <h3 className="text-indigo-500 font-[Momo_Trust_Display] text-xl mb-2">Posts</h3>
 
                 <div className="flex flex-wrap justify-center items-center gap-2">
-                    <img src="/src/assets/postd1.png" alt="miniatura de post" className={estiloPosts}/>
-                    <img src="/src/assets/postd2.png" alt="miniatura de post" className={estiloPosts} />
-                    <img src="/src/assets/postd3.png" alt="miniatura de post" className={estiloPosts} />
-                    <img src="/src/assets/postd4.png" alt="miniatura de post" className={estiloPosts} />
+                    <img src={Postd1} alt="miniatura de post" className={estiloPosts}/>
+                    <img src={Postd2} alt="miniatura de post" className={estiloPosts} />
+                    <img src={Postd3} alt="miniatura de post" className={estiloPosts} />
+                    <img src={Postd4} alt="miniatura de post" className={estiloPosts} />
                 </div>
             </section>
         </article>

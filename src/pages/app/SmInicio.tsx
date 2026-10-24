@@ -7,6 +7,15 @@ import HeaderApp from "../../components/app/HeaderApp";
 import FooterApp from "../../components/app/FooterApp";
 import { Navigate } from 'react-router';
 import { useUsuario } from '../../hooks/useUsuario';
+import PixIcon from "../../assets/pixicon.png";
+import RaiopIcon from "../../assets/raiopicon.png";
+import SmIcon from "../../assets/smicon.png";
+import LampadaIcon from "../../assets/lampadaicon.png";
+import Ads from "../../assets/ads.png";
+import UserPfp from "../../assets/userpfp.png";
+import SmPfp from "../../assets/smpfp.png";
+import Post1 from "../../assets/post1.png";
+
 
 function SmInicio () {
     const {usuario} = useUsuario();
@@ -24,23 +33,23 @@ function SmInicio () {
                 <Carteira />
 
                 <div className="flex gap-5 justify-center items-center">
-                    <BotaoBola imagem="/src/assets/pixicon.png" diretorio="#" descricao="Sacar via PIX" alt="Pictograma do PIX" funcional={false}/>
-                    <BotaoBola imagem="/src/assets/lampadaicon.png" diretorio="#" descricao="Resgatar Vale Energia" alt="Pictograma de lâmpada" funcional={false}/>
-                    <BotaoBola imagem="/src/assets/raiopicon.png" diretorio="#" descricao="Pagar conta de luz" alt="Pictograma de raio" funcional={false}/>
-                    <BotaoBola imagem="/src/assets/smicon.png" diretorio="/appMissoes" descricao="Acessar a SoulMove" alt="Pictograma da SoulMove" funcional={true}/>
+                    <BotaoBola imagem={PixIcon} diretorio="#" descricao="Sacar via PIX" alt="Pictograma do PIX" funcional={false}/>
+                    <BotaoBola imagem={LampadaIcon} diretorio="#" descricao="Resgatar Vale Energia" alt="Pictograma de lâmpada" funcional={false}/>
+                    <BotaoBola imagem={RaiopIcon} diretorio="#" descricao="Pagar conta de luz" alt="Pictograma de raio" funcional={false}/>
+                    <BotaoBola imagem={SmIcon} diretorio="/appMissoes" descricao="Acessar a SoulMove" alt="Pictograma da SoulMove" funcional={true}/>
                 </div>
             </div>
 
-            <Notificacao diretorio="/appMissoes" texto="Você tem 2 missões de mobilidade hoje!" imagem="/src/assets/smicon.png" alt="Mini logo da SoulMove"/>
- 
+            <Notificacao diretorio="/appMissoes" texto="Você tem 2 missões de mobilidade hoje!" imagem={SmIcon} alt="Mini logo da SoulMove"/>
+
             <div className="flex gap-5 justify-center">
-                <Stories imagem="/src/assets/ads.png" alt="Imagem dos anúncios"/>
-                <Stories imagem="/src/assets/userpfp.png" alt="Placeholder usuário"/>
-                <Stories imagem="/src/assets/userpfp.png" alt="Placeholder usuário"/>
-                <Stories imagem="/src/assets/userpfp.png" alt="Placeholder usuário"/>
+                <Stories imagem={Ads} alt="Imagem dos anúncios"/>
+                <Stories imagem={UserPfp} alt="Placeholder usuário"/>
+                <Stories imagem={UserPfp} alt="Placeholder usuário"/>
+                <Stories imagem={UserPfp} alt="Placeholder usuário"/>
             </div>
 
-            <Postagem icon="/src/assets/smpfp.png" usuario="SoulMove" tempo="há 1 minuto" imagem="/src/assets/post1.png"/>
+            <Postagem icon={SmPfp} usuario="SoulMove" tempo="há 1 minuto" imagem={Post1}/>
         
             <FooterApp/>
         </article>

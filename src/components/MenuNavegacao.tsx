@@ -104,7 +104,7 @@ function MenuNavegacao({ trocarMenu }: MenuNavegacaoProps) {
             </Link>
             {usuario?.isAdm && (
                 <Link to="/adm" className={`${estilosLink} justify-self-end`}>
-                    Adiministrador
+                    Administrador
                 </Link>
             )}
 
