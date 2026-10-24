@@ -3,7 +3,6 @@ import type { TipoMissao } from "../../types/missao"; // Ajuste o caminho confor
 import { useEffect, useState } from "react";
 import { ListarMissoes } from "../../service/missao"; // Ajuste o caminho conforme seu projeto
 import { useUsuario } from '../../hooks/useUsuario';
-import { useNavigate } from 'react-router';
 
 export default function ListaMissoes() {
 
