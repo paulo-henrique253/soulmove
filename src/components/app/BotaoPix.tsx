@@ -1,12 +1,4 @@
-import { usuario } from "../../data/usuario";
 import { useUsuario } from "../../hooks/useUsuario";
-
-let disponivel = false
-
-if (usuario.saldoMobilidade >= 10) {
-    disponivel = true 
-}
-
 
 function BotaoPix() {
 
