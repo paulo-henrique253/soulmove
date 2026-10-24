@@ -27,7 +27,7 @@ function SmRecarga() {
                     </div>
                 </div>
           
-                <CardSaldo saldo={123}/>
+                <CardSaldo saldo={usuario? usuario.saldo:0}/>
 
                 <section className="bg-white -mx-4 sm:-mx-5 rounded-t-4xl p-5 sm:p-6 flex flex-col gap-6 shadow-md mt-4">
                     <h3 className="text-indigo-600 font-[Lexend_Deca] text-sm font-semibold">Quando o saldo estiver liberado</h3>

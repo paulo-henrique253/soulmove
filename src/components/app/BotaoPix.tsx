@@ -1,16 +1,18 @@
-import { usuario } from "../../data/usuario";
-
-let disponivel = false
-
-if (usuario.saldoMobilidade >= 10) {
-    disponivel = true 
-}
-
+import { useUsuario } from "../../hooks/useUsuario";
 
 function BotaoPix() {
+
+    const { usuario } = useUsuario()
+
+    let disponivel = false
+
+    if (usuario && usuario.saldo >= 10) {
+        disponivel = true 
+    }
+
     return (
         <a
-            href={disponivel ? "https://www.sptrans.com.br/recarga" : "#"}
+            href={disponivel ? "https://atendimento.sptrans.com.br/login" : "#"}
             target={disponivel ? "_blank" : ""}
             rel="noopener noreferrer"
             className={disponivel ? "text-center font-[Lexend_Deca] text-white py-3 rounded-4xl drop-shadow-md/50 bg-indigo-500" : "text-center font-[Lexend_Deca] text-white py-3 rounded-4xl drop-shadow-md/50 bg-gray-400"}

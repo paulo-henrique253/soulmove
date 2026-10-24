@@ -2,12 +2,17 @@ import { usuario } from "../../data/usuario";
 import { useUsuario } from "../../hooks/useUsuario";
 import { recarregar } from "../../service/recarga";
 
+import { useUsuario } from "../../hooks/useUsuario";
 
-let disponivel = false
+function CaixaPix() {
+    
+    const { usuario } = useUsuario()
 
-if (usuario.saldoMobilidade >= 10) {
-    disponivel = true 
-}
+    let disponivel = false
+
+    if (usuario && usuario.saldo >= 10) {
+        disponivel = true 
+    }
 
 function CaixaPix() {
     const {usuario} = useUsuario();
