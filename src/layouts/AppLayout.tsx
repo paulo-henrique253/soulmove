@@ -2,20 +2,22 @@ import { Outlet } from "react-router";
 
 function AppLayout() {
     return (
-        <div className="flex justify-center items-center min-h-screen bg-gray-100 sm:p-6 md:p-8">
+        <div className="flex-1 flex justify-center items-center py-6 sm:py-8 px-2 sm:px-6">
             <div className="
                 relative
                 w-full
                 max-w-[420px]
-                min-h-screen
-                sm:min-h-0
-                sm:h-[844px]
+                h-[844px]
+                max-h-[88vh]
+                sm:max-h-none
+                rounded-[40px]
                 sm:rounded-[45px]
+                border-[8px]
                 sm:border-[10px]
-                sm:border-black
+                border-black
                 bg-white
                 overflow-hidden
-                sm:shadow-2xl
+                shadow-2xl
                 flex
                 flex-col
             ">
