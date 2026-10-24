@@ -1,5 +1,3 @@
-import { usuario } from "../../data/usuario";
-import { useUsuario } from "../../hooks/useUsuario";
 import { recarregar } from "../../service/recarga";
 
 import { useUsuario } from "../../hooks/useUsuario";
@@ -13,9 +11,6 @@ function CaixaPix() {
     if (usuario && usuario.saldo >= 10) {
         disponivel = true 
     }
-
-function CaixaPix() {
-    const {usuario} = useUsuario();
     return (
         <article className="flex flex-col justify-center items-center gap-4 w-full">
             <div className="bg-indigo-500 drop-shadow-md/50 flex flex-col p-4 rounded-2xl w-full">
