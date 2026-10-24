@@ -16,44 +16,45 @@ import UserPfp from "../../assets/userpfp.png";
 import SmPfp from "../../assets/smpfp.png";
 import Post1 from "../../assets/post1.png";
 
-
 function SmInicio () {
-    const {usuario} = useUsuario();
-    if(!usuario){
+    const { usuario } = useUsuario();
+    if (!usuario) {
         return <Navigate to={'/applogin'} />;
     }
+
     return (
-        <article className="
-        grid
-        ">
+        <article className="min-h-full flex flex-col justify-between">
+            <div className="flex flex-col gap-2">
+                <HeaderApp />
+                
+                <div className="bg-gray-100 -mx-4 p-4 sm:p-5 border-gray-300 border-t-2">
+                    <Carteira />
 
-            <HeaderApp/>
-            
-            <div className="bg-gray-100 -mx-4 p-5 border-gray-300 border-t-2">
-                <Carteira />
-
-                <div className="flex gap-5 justify-center items-center">
-                    <BotaoBola imagem={PixIcon} diretorio="#" descricao="Sacar via PIX" alt="Pictograma do PIX" funcional={false}/>
-                    <BotaoBola imagem={LampadaIcon} diretorio="#" descricao="Resgatar Vale Energia" alt="Pictograma de lâmpada" funcional={false}/>
-                    <BotaoBola imagem={RaiopIcon} diretorio="#" descricao="Pagar conta de luz" alt="Pictograma de raio" funcional={false}/>
-                    <BotaoBola imagem={SmIcon} diretorio="/appMissoes" descricao="Acessar a SoulMove" alt="Pictograma da SoulMove" funcional={true}/>
+                    <div className="flex justify-around items-start gap-1 sm:gap-2 mt-4">
+                        <BotaoBola imagem={PixIcon} diretorio="#" descricao="Sacar via PIX" alt="Pictograma do PIX" funcional={false}/>
+                        <BotaoBola imagem={LampadaIcon} diretorio="#" descricao="Vale Energia" alt="Pictograma de lâmpada" funcional={false}/>
+                        <BotaoBola imagem={RaiopIcon} diretorio="#" descricao="Conta de luz" alt="Pictograma de raio" funcional={false}/>
+                        <BotaoBola imagem={SmIcon} diretorio="/appMissoes" descricao="SoulMove" alt="Pictograma da SoulMove" funcional={true}/>
+                    </div>
                 </div>
+
+                <div className="px-1">
+                    <Notificacao diretorio="/appMissoes" texto="Você tem 2 missões de mobilidade hoje!" imagem={SmIcon} alt="Mini logo da SoulMove"/>
+                </div>
+
+                <div className="flex justify-around sm:justify-center items-center gap-2 sm:gap-4 overflow-x-auto py-2 px-1">
+                    <Stories imagem={Ads} alt="Imagem dos anúncios"/>
+                    <Stories imagem={UserPfp} alt="Placeholder usuário"/>
+                    <Stories imagem={UserPfp} alt="Placeholder usuário"/>
+                    <Stories imagem={UserPfp} alt="Placeholder usuário"/>
+                </div>
+
+                <Postagem icon={SmPfp} usuario="SoulMove" tempo="há 1 minuto" imagem={Post1}/>
             </div>
-
-            <Notificacao diretorio="/appMissoes" texto="Você tem 2 missões de mobilidade hoje!" imagem={SmIcon} alt="Mini logo da SoulMove"/>
-
-            <div className="flex gap-5 justify-center">
-                <Stories imagem={Ads} alt="Imagem dos anúncios"/>
-                <Stories imagem={UserPfp} alt="Placeholder usuário"/>
-                <Stories imagem={UserPfp} alt="Placeholder usuário"/>
-                <Stories imagem={UserPfp} alt="Placeholder usuário"/>
-            </div>
-
-            <Postagem icon={SmPfp} usuario="SoulMove" tempo="há 1 minuto" imagem={Post1}/>
         
-            <FooterApp/>
+            <FooterApp />
         </article>
-    )
+    );
 }
 
-export default SmInicio
+export default SmInicio;

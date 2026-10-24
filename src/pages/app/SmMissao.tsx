@@ -40,12 +40,14 @@ function SmMissao() {
 
     if (carregando) {
         return (
-            <article>
-                <HeaderApp />
-                <AreaSm />
-                <p className="relative bg-linear-to-r to-sky-400 from-indigo-500 p-3 rounded-2xl flex flex-col gap-3 drop-shadow-md/50 my-6 text-white font-[Momo_Trust_Display]">
-                    Carregando missão...
-                </p>
+            <article className="min-h-full flex flex-col justify-between">
+                <div>
+                    <HeaderApp />
+                    <AreaSm />
+                    <p className="relative bg-linear-to-r to-sky-400 from-indigo-500 p-4 rounded-2xl drop-shadow-md/50 my-6 text-white font-[Momo_Trust_Display] text-center text-sm sm:text-base">
+                        Carregando missão...
+                    </p>
+                </div>
                 <FooterApp />
             </article>
         )
@@ -53,71 +55,75 @@ function SmMissao() {
 
     if (erro || !missao) {
         return (
-            <article>
-                <HeaderApp />
-                <AreaSm />
-                <p className="relative bg-linear-to-r to-sky-400 from-indigo-500 p-3 rounded-2xl flex flex-col gap-3 drop-shadow-md/50 my-6 text-white font-[Momo_Trust_Display]">
-                    {erro ?? "Missão não encontrada."}
-                </p>
+            <article className="min-h-full flex flex-col justify-between">
+                <div>
+                    <HeaderApp />
+                    <AreaSm />
+                    <p className="relative bg-linear-to-r to-sky-400 from-indigo-500 p-4 rounded-2xl drop-shadow-md/50 my-6 text-white font-[Momo_Trust_Display] text-center text-sm sm:text-base">
+                        {erro ?? "Missão não encontrada."}
+                    </p>
+                </div>
                 <FooterApp />
             </article>
         )
     }
 
     return (
-        <article>
-            <HeaderApp />
-            <AreaSm />
+        <article className="min-h-full flex flex-col justify-between">
+            <div>
+                <HeaderApp />
+                <AreaSm />
 
-            <div className="flex flex-col items-center -mx-4">
-                {/* Seta voltar + Imagem da missão */}
-                <div className="relative w-full">
-                    <Link to="/appMissoes" className="absolute top-4 left-4 z-10">
-                        <img src={SetaEsquerda} alt="Voltar" className="w-8" />
-                    </Link>
-                    <img
-                        src={missao.linkImagem}
-                        alt={missao.titulo}
-                        className="w-full h-52 object-cover"
-                    />
-                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-white" />
-                </div>
+                <div className="flex flex-col items-center -mx-4 pb-4">
+                    {/* Seta voltar + Imagem da missão */}
+                    <div className="relative w-full">
+                        <Link to="/appMissoes" className="absolute top-4 left-4 z-10 p-1 hover:opacity-80">
+                            <img src={SetaEsquerda} alt="Voltar" className="w-7 sm:w-8" />
+                        </Link>
+                        <img
+                            src={missao.linkImagem}
+                            alt={missao.titulo}
+                            className="w-full h-48 sm:h-52 object-cover"
+                        />
+                        <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-white" />
+                    </div>
 
-                {/* Título da missão */}
-                <h1 className="text-transparent bg-clip-text bg-linear-to-r from-indigo-500 to-sky-400 font-[Momo_Trust_Display] text-3xl mt-4 text-center">
-                    {missao.titulo}
-                </h1>
+                    {/* Título da missão */}
+                    <h1 className="text-transparent bg-clip-text bg-linear-to-r from-indigo-500 to-sky-400 font-[Momo_Trust_Display] text-2xl sm:text-3xl font-bold mt-4 text-center px-4">
+                        {missao.titulo}
+                    </h1>
 
-                {/* Status */}
-                <p className="text-transparent bg-clip-text bg-linear-to-r from-indigo-500 to-sky-400 font-[Momo_Trust_Display] text-lg mt-2 text-center underline">
-                    Status: CONCLUÍDA!
-                </p>
-                <div className="w-40 h-0.5 bg-linear-to-r from-indigo-500 to-sky-400 rounded-full mt-2" />
-
-                {/* Botão de comprovação */}
-                <button
-                    type="button"
-                    className="bg-white rounded-3xl drop-shadow-md/50 px-10 py-6 flex flex-col items-center gap-2 mt-6 cursor-pointer hover:bg-gray-50 transition-colors"
-                >
-                    <p className="text-transparent bg-clip-text bg-linear-to-r from-indigo-500 to-sky-400 font-[Momo_Trust_Display] text-lg">
-                        Comprove<br />sua ação!
+                    {/* Status */}
+                    <p className="text-transparent bg-clip-text bg-linear-to-r from-indigo-500 to-sky-400 font-[Momo_Trust_Display] text-base sm:text-lg mt-2 text-center underline">
+                        Status: CONCLUÍDA!
                     </p>
-                    <img src={IconDocRoxo} alt="Ícone de upload" className="w-14 mt-1" />
-                    <p className="text-gray-400 font-[Lexend_Deca] text-sm mt-1">max. de 50mb</p>
-                </button>
+                    <div className="w-36 sm:w-40 h-0.5 bg-linear-to-r from-indigo-500 to-sky-400 rounded-full mt-2" />
 
-                {/* Recompensa */}
-                <h3 className="text-transparent bg-clip-text bg-linear-to-r from-indigo-500 to-sky-400 font-[Momo_Trust_Display] text-xl mt-6">
-                    Você receberá:
-                </h3>
-                <span className="bg-linear-to-r from-indigo-500 to-sky-400 text-white font-[Momo_Trust_Display] text-lg px-6 py-2 rounded-full mt-2 mb-6">
-                    {missao.pontos}Pts
-                </span>
+                    {/* Botão de comprovação */}
+                    <button
+                        type="button"
+                        className="bg-white rounded-3xl drop-shadow-md/50 px-8 sm:px-10 py-5 sm:py-6 flex flex-col items-center gap-2 mt-6 cursor-pointer hover:bg-gray-50 active:scale-98 transition-all"
+                    >
+                        <p className="text-transparent bg-clip-text bg-linear-to-r from-indigo-500 to-sky-400 font-[Momo_Trust_Display] text-base sm:text-lg font-bold">
+                            Comprove<br />sua ação!
+                        </p>
+                        <img src={IconDocRoxo} alt="Ícone de upload" className="w-12 sm:w-14 mt-1" />
+                        <p className="text-gray-400 font-[Lexend_Deca] text-xs sm:text-sm mt-1">max. de 50mb</p>
+                    </button>
+
+                    {/* Recompensa */}
+                    <h3 className="text-transparent bg-clip-text bg-linear-to-r from-indigo-500 to-sky-400 font-[Momo_Trust_Display] text-lg sm:text-xl font-bold mt-6">
+                        Você receberá:
+                    </h3>
+                    <span className="bg-linear-to-r from-indigo-500 to-sky-400 text-white font-[Momo_Trust_Display] text-base sm:text-lg font-bold px-6 py-2 rounded-full mt-2 mb-4 shadow-xs">
+                        {missao.pontos}Pts
+                    </span>
+                </div>
             </div>
 
             <FooterApp />
         </article>
-    )
+    );
 }
 
-export default SmMissao
+export default SmMissao;

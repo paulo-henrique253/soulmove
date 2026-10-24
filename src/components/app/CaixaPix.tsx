@@ -8,14 +8,19 @@ if (usuario.saldoMobilidade >= 10) {
 
 function CaixaPix() {
     return (
-        <article className="flex flex-col justify-center items-center gap-5">
-            <div className="bg-indigo-500 drop-shadow-md/50 flex flex-col p-4 rounded-2xl">
-                <p className="text-white font-[Lexend_Deca] mb-4">Colar código Pix</p>
-                <input type="text" placeholder={disponivel ? "Cole o código Pix aqui..." : "Saldo Insuficiente!"} 
-                    className="bg-indigo-700 border-white border placeholder:text-white placeholder:text-xs placeholder:opacity-80 p-5 rounded-2xl"/> 
+        <article className="flex flex-col justify-center items-center gap-4 w-full">
+            <div className="bg-indigo-500 drop-shadow-md/50 flex flex-col p-4 rounded-2xl w-full">
+                <p className="text-white font-[Lexend_Deca] text-xs font-medium mb-2.5">Colar código Pix</p>
+                <input 
+                    type="text" 
+                    placeholder={disponivel ? "Cole o código Pix aqui..." : "Saldo Insuficiente!"} 
+                    className="w-full bg-indigo-700/80 border border-white/60 placeholder:text-white/70 placeholder:text-xs text-white text-xs p-3.5 rounded-xl outline-none focus:border-white"
+                /> 
             </div>
 
-            <button className="bg-indigo-700 drop-shadow-md/50 text-white font-[Momo_Trust_Display] px-8 py-2 rounded-4xl">Confirmar recarga</button>
+            <button className="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 active:scale-98 transition-all drop-shadow-md/50 text-white font-[Momo_Trust_Display] text-sm font-bold px-8 py-3 rounded-2xl cursor-pointer">
+                Confirmar recarga
+            </button>
         </article>
     );
 }

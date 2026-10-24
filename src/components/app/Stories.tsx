@@ -3,9 +3,15 @@ type StoriesProps = {
     alt: string
 }
 
-function Stories( {imagem, alt}: StoriesProps) {
+function Stories({ imagem, alt }: StoriesProps) {
     return (
-        <img src={imagem} alt={alt} className="w-16 border-3 rounded-4xl border-indigo-500"/>
+        <div className="shrink-0">
+            <img 
+                src={imagem} 
+                alt={alt} 
+                className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-indigo-500 object-cover p-0.5 hover:scale-105 transition-transform cursor-pointer"
+            />
+        </div>
     );
 }
 
