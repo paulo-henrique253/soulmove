@@ -45,7 +45,7 @@ export const integrantes: Integrante[] = [
     foto: Felle,
     github: "https://github.com/lixzaura",
     linkedin: "https://www.linkedin.com/in/lixzaura",
-    sobre: "Sou ilutradora e atualmente estou entrando no ramo da programação, esotu gostando muito de estudar e pretendo focar totalmente em backend.",
+    sobre: "Sou ilustradora e atualmente estou entrando no ramo da programação, esotu gostando muito de estudar e pretendo focar totalmente em backend.",
   },
   {
     nome: "Paulo Henrique",

@@ -1,4 +1,3 @@
-import { usuario } from "../../data/usuario";
 import { useUsuario } from "../../hooks/useUsuario";
 
 function CaixaPix() {
