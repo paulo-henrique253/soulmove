@@ -41,7 +41,7 @@ function Integrante(){
                         href={integrante.github} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="w-full flex justify-center items-center bg-indigo-600 rounded-xl h-12 py-1"
+                        className="w-full flex justify-center items-center bg-indigo-600/30 rounded-xl h-12 py-1"
                     >
                         <img src={imgGithub} alt="Logo do Github" className="h-6 w-6" />
                     </a>
@@ -49,12 +49,12 @@ function Integrante(){
                         href={integrante.linkedin} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="w-full flex justify-center items-center bg-indigo-600 rounded-xl h-12 py-1"
+                        className="w-full flex justify-center items-center bg-indigo-600/30 rounded-xl h-12 py-1"
                     >
                         <img src={imgLinkedin} alt="Logo do Linkedin" className="h-6 w-6" />
                     </a>
 
-                    <button className="w-full font-['Lexend_Deca'] flex justify-center items-center bg-indigo-600 rounded-xl h-12 py-1 text-white" onClick={() => navigate("/integrantes")}>
+                    <button className="w-full font-['Lexend_Deca'] flex justify-center items-center bg-indigo-600/30 rounded-xl h-12 py-1 text-white" onClick={() => navigate("/integrantes")}>
                         Voltar para integrantes
                     </button>
 
