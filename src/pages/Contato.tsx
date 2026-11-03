@@ -101,12 +101,12 @@ function Contato() {
       </section>
 
       {modalAberto && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/20">
-          <div className="min-w-[60%] max-w-[50%] rounded-3xl bg-linear-to-r from-indigo-500 to-sky-400 p-8">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/20 px-6">
+          <div className="relative w-full max-w-lg rounded-3xl bg-linear-to-r from-indigo-500 to-sky-400 p-8">
             <button
               type="button"
               onClick={() => setModalAberto(false)}
-              className="pb-2 relative left-[calc(100%-4rem)] font-['Momo_Trust_Display'] sm:text-3xl text-white"
+              className="absolute top-4 right-6 font-['Momo_Trust_Display'] sm:text-3xl text-white"
             >
               X
             </button>
