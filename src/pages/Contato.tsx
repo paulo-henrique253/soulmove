@@ -81,7 +81,7 @@ function Contato() {
 
             <button
               type="submit"
-              className="self-center px-8 py-4 bg-linear-to-r from-indigo-500 to-sky-400 text-white font-['Lexend_Deca'] font-bold rounded-full"
+              className="self-center px-8 py-4 bg-linear-to-r from-indigo-500 to-sky-400 text-white font-['Lexend_Deca'] font-bold rounded-[14px]"
             >
               Enviar
             </button>
