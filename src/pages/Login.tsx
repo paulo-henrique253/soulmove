@@ -43,7 +43,7 @@ function Login() {
   
   return (
     <div className="flex-1 flex flex-col justify-center items-center w-full max-w-md mx-auto px-6 py-12">
-      <TituloPagina texto="Entre na sua conta" />
+      <TituloPagina texto={"Entre na\nsua conta"} />
       
       <div className="w-full bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-gray-100 mt-6">
         <form className="flex flex-col gap-5" noValidate onSubmit={handleSubmit(onSubmit)}>

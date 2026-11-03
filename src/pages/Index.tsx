@@ -75,8 +75,8 @@ function Index() {
           
 
           <p className="font-['Lexend_Deca'] text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            A SoulMove conecta tecnologia, sustentabilidade e comunidade para construir
-            cidades mais inteligentes, acessíveis e sustentáveis.
+            A SoulMove conecta tecnologia, sustentabilidade e comunidade para<br />
+            construir cidades mais inteligentes, acessíveis e sustentáveis.
           </p>
         </section>
 

@@ -33,7 +33,7 @@ function Sobre() {
             mb-10">
             Quanto carbono você emite?
           </h2>
-          <p className="font-['Lexend_Deca'] text-lg md:text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
+          <p className="font-['Lexend_Deca'] text-lg md:text-xl leading-relaxed mb-10 max-w-2xl mx-auto text-balance">
             No campo abaixo, insira uma quilometragem e descubra a quantidade de carbono
             que você emite fazendo uma viagem de carro.
           </p>

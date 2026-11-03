@@ -5,11 +5,11 @@ import { funcionalidadesData } from '../data/funcionalidades'; // Importando os 
 function Funcionalidades() {
     
   return (
-      <main className="flex-1 w-full max-w-5xl mx-auto px-6 py-12">
+      <main className="flex-1 w-full max-w-6xl mx-auto px-6 py-12 md:py-20">
 
         <TituloPagina texto="Como a SoulMove funciona?"/>
         
-        <div className="space-y-8">
+        <div>
           {funcionalidadesData.map((funcionalidade, index) => (
             <CardFuncionalidade 
                key={funcionalidade.id} 

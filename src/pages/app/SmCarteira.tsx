@@ -23,7 +23,7 @@ function SmCarteira() {
     }
 
     return (
-        <article className="bg-indigo-500 -m-4 p-4 sm:p-5 pt-8 sm:pt-10 min-h-full flex flex-col justify-between">
+        <article className="bg-indigo-500 -m-4 p-4 sm:p-5 pb-0 sm:pb-0 pt-8 sm:pt-10 min-h-[calc(100%+2rem)] flex flex-col">
             <div>
                 {/* Topo: Pontos e Extrato */}
                 <div className="flex justify-between items-center mb-8">
@@ -65,7 +65,7 @@ function SmCarteira() {
             </div>
 
             {/* Parte Branca Inferior */}
-            <article className="bg-white -mx-4 sm:-mx-5 rounded-t-4xl p-5 flex flex-col gap-6 mt-8 shadow-md">
+                <article className="bg-white -mx-4 sm:-mx-5 rounded-t-4xl p-5 flex flex-col gap-6 mt-8 shadow-md flex-1">
                 <div className="flex justify-around items-start gap-2">
                     <BotaoBola imagem={PixIcon} diretorio="#" descricao="Sacar via PIX" alt="Pictograma PIX." funcional={false}/>
                     <BotaoBola imagem={SmIcon} diretorio="/appRecarga" descricao="Recarregar Bilhete" alt="Pictograma SoulMove." funcional={true}/>
