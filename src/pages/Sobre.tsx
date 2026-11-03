@@ -3,7 +3,6 @@ import TituloPagina from "../components/TituloPagina";
 import poluicaoImg from "../assets/poluicao.png";
 import sobreImg2 from "../assets/sobre_img_2.png";
 import sobreImg3 from "../assets/sobre_img_3.png";
-import missoesPontosImg from "../assets/missoes_pontos_passagens.png";
 import bilheteUnicoImg from "../assets/bilhete_unico.png";
 
 function Sobre() {
@@ -75,13 +74,6 @@ function Sobre() {
               className="w-full max-w-md mx-auto h-auto rounded-3xl object-cover shadow-xl"
             />
           </div>
-        </section>
-        <section className="py-12">
-          <img
-            src={missoesPontosImg}
-            alt="Fluxo de missões, pontos e passagens"
-            className="w-full max-w-2xl mx-auto h-auto rounded-3xl object-cover"
-          />
         </section>
         <section className="flex flex-col md:flex-row items-center gap-12 py-12">
           <div className="flex-1 w-full">
