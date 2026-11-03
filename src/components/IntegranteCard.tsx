@@ -31,7 +31,7 @@ function IntegranteCard({nome, slug, rm, foto, github, linkedin}: IntegranteCard
           href={github} 
           target="_blank" 
           rel="noopener noreferrer"
-          className="w-full flex justify-center items-center bg-indigo-600 rounded-xl h-12 py-1"
+          className="w-full flex justify-center items-center bg-indigo-600/30 rounded-xl h-12 py-1"
         >
           <img src={imgGithub} alt="Logo do Github" className="h-6 w-6" />
         </a>
@@ -39,7 +39,7 @@ function IntegranteCard({nome, slug, rm, foto, github, linkedin}: IntegranteCard
           href={linkedin} 
           target="_blank" 
           rel="noopener noreferrer"
-          className="w-full flex justify-center items-center bg-indigo-600 rounded-xl h-12 py-1"
+          className="w-full flex justify-center items-center bg-indigo-600/30 rounded-xl h-12 py-1"
         >
           <img src={imgLinkedin} alt="Logo do Linkedin" className="h-6 w-6" />
         </a>
