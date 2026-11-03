@@ -88,15 +88,16 @@ function Contato() {
           </form>
         </div>
 
-        <div className="hidden w-full max-w-md flex-col gap-6 self-start lg:flex">
-          <h2 className="font-['Momo_Trust_Display'] text-2xl w-fit bg-linear-to-r from-sky-400 to-indigo-600 bg-clip-text text-transparent">Fale com a SoulMove</h2>
-          <p className="font-['Lexend_Deca'] text-gray-900 text-lg md:text-xl">
+          <div className="hidden w-full max-w-md flex-col items-center gap-6 self-center text-center lg:flex">
+          <h2 className="font-['Momo_Trust_Display'] text-3xl md:text-4xl font-black w-fit pb-1 bg-linear-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent">Fale com a SoulMove</h2>
+          <p className="font-['Lexend_Deca'] text-gray-900 text-xl md:text-2xl">
             Dúvidas, sugestões ou ideias? Vamos construir cidades mais sustentáveis juntos.
           </p>
-          <p className="font-['Lexend_Deca'] text-gray-900 text-lg md:text-xl">
+          <p className="font-['Lexend_Deca'] text-gray-900 text-xl md:text-2xl mt-4">
             A <strong>transformação</strong> começa com <strong>conexão</strong>.
+                    <img src={imgContato} alt="Imagem da SoulMove" className="w-full h-auto rounded-3xl mt-8" />
           </p>
-          <img src={imgContato} alt="Imagem da SoulMove" className="w-full h-auto rounded-3xl" />
+          
         </div>
       </section>
 
