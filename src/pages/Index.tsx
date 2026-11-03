@@ -9,7 +9,7 @@ function Index() {
   return (
       <main className="flex-1 w-full max-w-6xl mx-auto px-6 py-12 md:py-20">
        
-        <TituloPagina texto="Transforme Mobilidade em Impacto Positivo"/>
+        <TituloPagina texto={"Transforme Mobilidade\nem Impacto Positivo"}/>
 
         <section className="flex flex-col md:flex-row items-center gap-12 py-12">
           <div className="flex-1 space-y-6">
