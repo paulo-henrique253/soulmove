@@ -20,7 +20,7 @@ function CardFuncionalidade( { inverterOrdem = false, titulo, descricao, imagemP
                         {titulo}
                     </h2>
 
-                    <p className="font-['Lexend_Deca'] text-lg leading-relaxed">
+                    <p className="font-['Lexend_Deca'] text-lg md:text-xl leading-relaxed">
                         {descricao}
                     </p>
 

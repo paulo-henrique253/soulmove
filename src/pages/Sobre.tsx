@@ -11,11 +11,11 @@ function Sobre() {
         <TituloPagina texto={"Mobilidade sustentável começa\ncom escolhas conscientes"}/>
         <section className="flex flex-col md:flex-row items-center gap-12 py-12">
           <div className="flex-1 space-y-6">
-            <p className="font-['Lexend_Deca'] text-lg leading-relaxed">
+            <p className="font-['Lexend_Deca'] text-lg md:text-xl leading-relaxed">
               Sustentabilidade nunca foi tão discutida. Mesmo assim, milhões de pessoas ainda não
               conseguem perceber como pequenas escolhas da rotina impactam diretamente o meio ambiente.
             </p>
-            <p className="font-['Lexend_Deca'] text-lg leading-relaxed">
+            <p className="font-['Lexend_Deca'] text-lg md:text-xl leading-relaxed">
               Ao mesmo tempo, as grandes cidades enfrentam desafios cada vez maiores relacionados
               ao trânsito, mobilidade urbana e emissão de carbono.
             </p>
@@ -33,7 +33,7 @@ function Sobre() {
             mb-10">
             Você sabe quanto você emite?
           </h2>
-          <p className="font-['Lexend_Deca'] text-lg mb-10 max-w-2xl mx-auto">
+          <p className="font-['Lexend_Deca'] text-lg md:text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
             No campo abaixo, insira uma quilometragem e descubra a quantidade de carbono
             que você emite fazendo uma viagem de carro.
           </p>
@@ -45,7 +45,7 @@ function Sobre() {
             mb-10">
             Uma nova forma de incentivar mobilidade consciente
             </h2>
-            <p className="font-['Lexend_Deca'] text-lg leading-relaxed max-w-2xl mx-auto">
+            <p className="font-['Lexend_Deca'] text-lg md:text-xl leading-relaxed mb-10">
             Foi nesse cenário que surgiu a <strong>SoulMove</strong>: uma solução que conecta{' '}
             <strong>tecnologia, mobilidade urbana e sustentabilidade</strong> em uma experiência
             digital baseada em comunidades, missões e recompensas.
@@ -59,12 +59,12 @@ function Sobre() {
         </section>
         <section className="flex flex-col md:flex-row items-center gap-12 py-12">
           <div className="flex-1 space-y-6">
-            <p className="font-['Lexend_Deca'] text-lg leading-relaxed">
+            <p className="font-['Lexend_Deca'] text-lg md:text-xl leading-relaxed">
               Dentro da plataforma, os usuários participam de missões sustentáveis, desafios
               colaborativos e comunidades digitais, acumulando pontos que podem ser convertidos
               em benefícios para o transporte público.
             </p>
-            <p className="font-['Lexend_Deca'] text-lg leading-relaxed">
+            <p className="font-['Lexend_Deca'] text-lg md:text-xl leading-relaxed">
               A proposta busca transformar pequenas ações do dia a dia em impacto positivo
               para mobilidade urbana e meio ambiente.
             </p>
@@ -86,11 +86,11 @@ function Sobre() {
             />
           </div>
           <div className="flex-1 space-y-6">
-            <p className="font-['Lexend_Deca'] text-lg leading-relaxed">
+            <p className="font-['Lexend_Deca'] text-lg md:text-xl leading-relaxed">
               Ao cumprir essas missões, o usuário acumula pontos que podem ser convertidos
               em descontos para o transporte público.
             </p>
-            <p className="font-['Lexend_Deca'] text-lg leading-relaxed">
+            <p className="font-['Lexend_Deca'] text-lg md:text-xl leading-relaxed">
               Mais do que oferecer benefícios, a SoulMove busca incentivar mudanças reais
               de comportamento, aproximando sustentabilidade da rotina cotidiana das pessoas.
             </p>
