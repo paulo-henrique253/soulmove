@@ -26,7 +26,7 @@ function Index() {
                 href="https://soulup.io/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-['Lexend_Deca'] inline-block px-8 py-4 bg-linear-to-r from-indigo-500 to-sky-400 text-white font-bold rounded-full"
+                className="font-['Lexend_Deca'] inline-block px-8 py-4 bg-linear-to-r from-indigo-500 to-sky-400 text-white font-bold rounded-[14px]"
               >
                 Conheça a SoulUP
               </a>
@@ -88,7 +88,7 @@ function Index() {
             <div>
               <Link
                 to="/sobre"
-                className="font-['Lexend_Deca'] inline-block px-8 py-4 bg-linear-to-r from-indigo-500 to-sky-400 text-white font-bold rounded-full"
+                className="font-['Lexend_Deca'] inline-block px-8 py-4 bg-linear-to-r from-indigo-500 to-sky-400 text-white font-bold rounded-[14px]"
               >
                 Descubra a Plataforma
               </Link>
