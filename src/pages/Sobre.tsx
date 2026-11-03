@@ -31,7 +31,7 @@ function Sobre() {
         <section className="py-16 text-center rounded-3xl my-8 px-6">
           <h2 className="font-['Momo_Trust_Display'] text-3xl md:text-4xl font-black bg-linear-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent
             mb-10">
-            Você sabe quanto você emite?
+            Você sabe quanto emite?
           </h2>
           <p className="font-['Lexend_Deca'] text-lg md:text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
             No campo abaixo, insira uma quilometragem e descubra a quantidade de carbono

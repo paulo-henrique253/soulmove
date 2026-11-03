@@ -25,7 +25,7 @@ export const integrantes: Integrante[] = [
     foto: Zeni,
     github: "https://github.com/F-Zeni",
     linkedin: "https://www.linkedin.com/in/enzo-fachinelli-zeni-687a873b3",
-    sobre: "Tenho interesse em tecnologia, programação e banco de dados. Busco sempre aprimorar meus conhecimentos, aprender novas tecnologias e evoluir profissionalmente",
+    sobre: "Tenho interesse em tecnologia, programação e banco de dados. Busco sempre aprimorar meus conhecimentos, aprender novas tecnologias e evoluir profissionalmente.",
   },
   {
     nome: "Jacqueline Lotufo",
@@ -44,8 +44,8 @@ export const integrantes: Integrante[] = [
     rm: "RM569098",
     foto: Felle,
     github: "https://github.com/lixzaura",
-    linkedin: "https://www.linkedin.com/in/lixzaura",
-    sobre: "Sou ilustradora e atualmente estou entrando no ramo da programação, esotu gostando muito de estudar e pretendo focar totalmente em backend.",
+    linkedin: "https://www.linkedin.com/in/juliafreitasb/",
+    sobre: "Sou ilustradora e atualmente estou entrando no ramo da programação, estou gostando muito de estudar e pretendo focar totalmente em backend.",
   },
   {
     nome: "Paulo Henrique",
@@ -64,7 +64,7 @@ export const integrantes: Integrante[] = [
     rm: "RM569359",
     foto: Dani,
     github: "https://github.com/daniellekgn",
-    linkedin: "https://www.linkedin.com/in/danielle-fernanda-kagan-9026b141b/",
+    linkedin: "https://www.linkedin.com/in/daniellekagan/",
     sobre: "Tenho interesse em tecnologia, desenvolvimento de interfaces e UX-UI. Atualmente também estou gostando bastante de trabalhar com Back-end.",
   },
 ];
