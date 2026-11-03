@@ -24,7 +24,7 @@ function Sobre() {
             <img
               src={poluicaoImg}
               alt="Poluição em São Paulo"
-              className="w-full max-w-md mx-auto h-auto rounded-3xl object-cover shadow-xl"
+              className="w-full h-auto rounded-3xl object-cover shadow-xl"
             />
           </div>
         </section>
@@ -73,7 +73,7 @@ function Sobre() {
             <img
               src={sobreImg3}
               alt="Mãos com plantas"
-              className="w-full max-w-md mx-auto h-auto rounded-3xl object-cover shadow-xl"
+              className="w-full h-auto rounded-3xl object-cover shadow-xl"
             />
           </div>
         </section>
@@ -82,7 +82,7 @@ function Sobre() {
             <img
               src={bilheteUnicoImg}
               alt="Bilhete único sendo usado"
-              className="w-full max-w-md mx-auto h-auto rounded-3xl object-cover shadow-xl"
+              className="w-full h-auto rounded-3xl object-cover shadow-xl"
             />
           </div>
           <div className="flex-1 space-y-6">
