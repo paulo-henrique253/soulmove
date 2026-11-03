@@ -18,8 +18,8 @@ function Index() {
               converter pontos acumulados em benefícios reais para o transporte público.
             </p>
             <p className="font-['Lexend_Deca'] text-lg md:text-xl leading-relaxed">
-              Por meio de missões sustentáveis, comunidades colaborativas e desafios interativos,
-              os usuários acumulam pontos que podem ser utilizados como créditos de mobilidade urbana.
+              Por meio de missões, desafios interativos e comunidades colaborativas, 
+              os usuários acumulam pontos que podem ser convertidos em créditos para o transporte público.
             </p>
             <div className="pt-4">
               <a
@@ -44,13 +44,12 @@ function Index() {
         <section className="flex flex-col md:flex-row-reverse items-center gap-12 py-16 border-t border-gray-100 mt-8">
           <div className="flex-1 space-y-6">
             <p className="font-['Lexend_Deca'] text-lg md:text-xl leading-relaxed">
-              A proposta incentiva o uso do transporte público, reduz a emissão de carbono
-              e conecta o ambiente digital a impactos positivos no mundo real.
+              Na SoulMove, cada ação conta. Com nossa calculadora de carbono, os usuários podem comparar o impacto ambiental de 
+              diferentes meios de transporte e compreender melhor as consequências de suas escolhas.
             </p>
             <p className="font-['Lexend_Deca'] text-lg md:text-xl leading-relaxed">
-              Além da gamificação sustentável, a SoulMove oferece acompanhamento de impacto
-              ambiental, participação em comunidades e integração com sistemas de bilhetagem,
-              criando uma experiência moderna, acessível e sustentável para a mobilidade urbana.
+              Ao tornar essas informações mais acessíveis e incentivar a participação coletiva, a plataforma estimula mudanças 
+              de comportamento que contribuem para uma mobilidade urbana mais consciente e sustentável.
             </p>
           </div>
           <div className="flex-1 w-full">
