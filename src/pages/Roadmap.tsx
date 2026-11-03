@@ -18,7 +18,8 @@ function Roadmap() {
                         gap-8
                         px-16
                         xl:mx-auto
-                        xl:w-188"
+                        xl:w-188
+                        mb-10"
                 >
                     <TextoRoadmap
                         texto="O desenvolvimento da SoulMove foi planejado para acontecer de forma progressiva, permitindo validação contínua da experiência do usuário e crescimento sustentável da plataforma."
@@ -34,7 +35,7 @@ function Roadmap() {
                 <img src={roadmapSoulmove} alt="Roadmap da SoulMove" className="mx-auto block w-full max-w-7xl md:px-[10vw]"/>
             </section>
 
-            <section className="w-full">
+            <section className="w-full mt-10">
                 <div className="
                         flex
                         w-full
@@ -45,6 +46,7 @@ function Roadmap() {
 
                         xl:mx-auto
                         xl:w-188
+                        mb-10
                 ">
                     <TextoRoadmap
                         texto="Mais do que um aplicativo de mobilidade, a SoulMove busca criar um ecossistema digital capaz de conectar tecnologia, conscientização ambiental e transformação cultural."
