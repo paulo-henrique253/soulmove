@@ -89,7 +89,7 @@ function Contato() {
         </div>
 
         <div className="hidden w-full max-w-md flex-col justify-between self-start lg:flex lg:h-104">
-          <h2 className="font-['Momo_Trust_Display'] text-2xl text-indigo-600">Fale com a SoulMove</h2>
+          <h2 className="font-['Momo_Trust_Display'] text-2xl w-fit bg-linear-to-r from-sky-400 to-indigo-600 bg-clip-text text-transparent">Fale com a SoulMove</h2>
           <p className="font-['Lexend_Deca'] text-gray-900 text-2xl">
             Dúvidas, sugestões ou ideias? Vamos construir cidades mais sustentáveis juntos.
           </p>

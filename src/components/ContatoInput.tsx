@@ -10,7 +10,7 @@ const ContatoInput = forwardRef<HTMLInputElement, ContatoInputProps>(
   ({ label, erro, id, ...props }, ref) => {
     return (
       <div className="flex flex-col gap-1.5">
-        <label htmlFor={id} className="font-['Momo_Trust_Display'] text-lg text-indigo-600">
+        <label htmlFor={id} className="w-fit pb-1 font-['Momo_Trust_Display'] text-lg bg-linear-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent">
           {label}
         </label>
         <input

@@ -71,8 +71,8 @@ function Index() {
         </div>
 
         <section className="text-center py-20 px-6">
-          <h2 className="font-['Momo_Trust_Display'] text-2xl sm:text-4xl md:text-5xl font-black mb-2">Mensurar impactos</h2>
-          <h2 className="font-['Momo_Trust_Display'] text-2xl sm:text-4xl md:text-5xl font-black mb-2">Mudar comportamentos</h2>
+          <h2 className="font-['Momo_Trust_Display'] text-2xl sm:text-4xl md:text-5xl font-black mb-2 bg-linear-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent">Mensurar impactos</h2>
+          <h2 className="font-['Momo_Trust_Display'] text-2xl sm:text-4xl md:text-5xl font-black mb-2 bg-linear-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent">Mudar comportamentos</h2>
           
 
           <p className="font-['Lexend_Deca'] text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
@@ -83,7 +83,7 @@ function Index() {
 
         <section className="flex flex-col md:flex-row items-center gap-12 py-16 mt-8">
           <div className="flex-1 space-y-10">
-            <p className="font-['Momo_Trust_Display'] text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+            <p className="font-['Momo_Trust_Display'] text-3xl md:text-5xl font-extrabold bg-linear-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent leading-tight">
               Transformando engajamento sustentável em mobilidade urbana inteligente
             </p>
             <div>

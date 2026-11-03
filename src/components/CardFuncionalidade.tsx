@@ -16,7 +16,7 @@ function CardFuncionalidade( { inverterOrdem = false, titulo, descricao, imagemP
     return (
             <section className={`flex flex-col ${inverterOrdem ? "md:flex-row-reverse" : "md:flex-row"} items-center justify-between gap-12 py-12 border-b border-gray-100 last:border-0`}>
                 <div className="flex-1 space-y-5 w-full">
-                    <h2 className="font-['Momo_Trust_Display'] text-4xl font-bold ">
+                    <h2 className="font-['Momo_Trust_Display'] text-4xl font-bold bg-linear-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent">
                         {titulo}
                     </h2>
 
@@ -24,7 +24,8 @@ function CardFuncionalidade( { inverterOrdem = false, titulo, descricao, imagemP
                         {descricao}
                     </p>
 
-                    <p className="hidden lg:inline-block font-['Lexend_Deca'] px-4 py-2 text-sky-400 font-semibold text-sm">
+                    <p className="hidden lg:inline-block font-['Lexend_Deca'] text-sky-400 font-semibold text-sm bg-linear-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent
+            mb-16">
                         Interaja com a imagem!
                     </p>
                 </div>

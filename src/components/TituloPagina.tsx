@@ -11,7 +11,8 @@ function TituloPagina({ texto }: TituloPaginaProps) {
                     font-extrabold
                     text-center 
                     bg-linear-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent
-            mb-16"
+            pb-2
+            mb-14"
         >
             {texto}
         </h1>

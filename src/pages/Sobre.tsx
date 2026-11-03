@@ -29,7 +29,8 @@ function Sobre() {
           </div>
         </section>
         <section className="py-16 text-center rounded-3xl my-8 px-6">
-          <h2 className="font-['Momo_Trust_Display'] text-3xl md:text-4xl font-black text-sky-400 mb-4">
+          <h2 className="font-['Momo_Trust_Display'] text-3xl md:text-4xl font-black bg-linear-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent
+            mb-10">
             Você sabe quanto você emite?
           </h2>
           <p className="font-['Lexend_Deca'] text-lg mb-10 max-w-2xl mx-auto">
@@ -40,7 +41,8 @@ function Sobre() {
         </section>
         <section className="py-16 space-y-8">
           <div className="max-w-3xl mx-auto text-center space-y-4">
-            <h2 className="font-['Momo_Trust_Display'] text-3xl font-bold text-gray-800">
+            <h2 className="font-['Momo_Trust_Display'] text-3xl font-bold bg-linear-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent
+            mb-10">
             Uma nova forma de incentivar mobilidade consciente
             </h2>
             <p className="font-['Lexend_Deca'] text-lg leading-relaxed max-w-2xl mx-auto">
@@ -95,7 +97,7 @@ function Sobre() {
           </div>
         </section>
         <section className="py-20 text-center">
-          <p className="font-['Momo_Trust_Display'] text-3xl md:text-4xl font-black max-w-4xl mx-auto leading-snug">
+          <p className="font-['Momo_Trust_Display'] text-3xl md:text-4xl font-black bg-linear-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent">
             Tecnologia, comunidade e sustentabilidade conectadas em uma única experiência.
           </p>
         </section>
