@@ -49,7 +49,13 @@ function Header() {
                 ☰
             </button>
 
-            <img src={SoulMove_Pequena} alt="SoulMove Logo" className="block h-auto w-[clamp(120px,18vw,180px)]"/>
+            <a href="/" aria-label="Voltar para a página inicial">
+                <img
+                    src={SoulMove_Pequena}
+                    alt="SoulMove Logo"
+                    className="block h-auto w-[clamp(120px,18vw,180px)]"
+                />
+            </a>
 
             <MenuNavegacao trocarMenu={trocarMenu} menuAberto={menuAberto} />
 
