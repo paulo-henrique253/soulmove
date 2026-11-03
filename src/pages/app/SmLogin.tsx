@@ -45,7 +45,7 @@ function SmLogin() {
     <article className="min-h-full flex flex-col justify-center py-6 px-2">
       <div className="flex flex-col items-center mb-6">
         <img src={SoulMove_Pequena} alt="SoulMove Logo" className="w-32 h-auto mb-2" />
-        <h1 className="text-2xl sm:text-3xl text-center font-[Momo_Trust_Display] font-bold text-gray-800">
+                <h1 className="text-2xl sm:text-3xl text-center font-[Momo_Trust_Display] font-bold text-indigo-600">
           Entre na sua conta
         </h1>
         <p className="text-xs sm:text-sm text-gray-500 font-[Lexend_Deca] text-center mt-1">

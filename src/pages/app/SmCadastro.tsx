@@ -5,6 +5,7 @@ import { useState } from "react";
 import ErroLabel from "../../components/app/ErroLabel";
 import ContatoInput from "../../components/ContatoInput";
 import { cadastrar } from "../../service/usuario";
+import SoulMove_Pequena from "../../assets/SoulMove_Pequena.png";
 
 export type CadastroFormValues = {
     nome: string
@@ -50,11 +51,19 @@ async function onSubmit(data: CadastroFormValues){
   }
 
   return(
-  <article>
-    <h1 className="pt-10 text-3xl text-center font-['Momo_Trust_Display']">Crie sua conta</h1>
+    <article className="min-h-full flex flex-col justify-center py-6 px-2">
+    <div className="flex flex-col items-center mb-6">
+      <img src={SoulMove_Pequena} alt="SoulMove Logo" className="w-32 h-auto mb-2" />
+      <h1 className="text-2xl sm:text-3xl text-center font-['Momo_Trust_Display'] font-bold text-indigo-600">
+        Crie sua conta
+      </h1>
+      <p className="text-xs sm:text-sm text-gray-500 font-['Lexend_Deca'] text-center mt-1">
+        Cadastre-se para acessar sua carteira e suas missões
+      </p>
+    </div>
     
     <form className="flex flex-col" noValidate onSubmit={handleSubmit(onSubmit)}>
-      <div className="flex flex-col px-2 py-2.5 gap-6.5">
+      <div className="flex flex-col gap-4">
           
           <ContatoInput
             id="nome"
@@ -106,10 +115,10 @@ async function onSubmit(data: CadastroFormValues){
           {/* Erro Geral (Ex: Erro de API) */}
           {erro && (<ErroLabel message={erro} />)}
           
-          <div className="flex flex-col gap-4 sm:flex-row sm:justify-evenly mt-2 ">
+          <div className="flex flex-col gap-3 mt-4">
             <button
               type="submit"
-              className="cursor-pointer self-center w-full h-19.5 sm:w-auto px-8 py-4 bg-linear-to-r from-indigo-500 to-sky-400 text-white font-['Lexend_Deca'] font-bold rounded-full disabled:opacity-70"
+              className="w-full cursor-pointer py-3.5 bg-linear-to-r from-indigo-500 to-sky-400 text-white font-['Lexend_Deca'] font-bold rounded-full text-sm disabled:opacity-70"
               disabled={isSubmitting}
             >
               {isSubmitting ? "Cadastrando..." : "Cadastrar"}
@@ -118,7 +127,7 @@ async function onSubmit(data: CadastroFormValues){
             <button
               type="button"
               onClick={navegarLogin} // Renomeado para fazer sentido no contexto
-              className="cursor-pointer self-center w-full sm:w-auto px-8 py-4 bg-linear-to-r from-indigo-500 to-sky-400 text-white font-['Lexend_Deca'] font-bold rounded-full"
+              className="w-full cursor-pointer py-3.5 border-2 border-indigo-400 text-indigo-600 font-['Lexend_Deca'] font-bold rounded-full text-sm"
             >
               Já tenho uma conta
             </button>
