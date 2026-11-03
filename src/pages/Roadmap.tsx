@@ -62,7 +62,6 @@ function Roadmap() {
                         flex-col
                         items-center
                         gap-8
-                        px-16
 
                         xl:mx-auto
                         xl:w-188

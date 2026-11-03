@@ -9,7 +9,9 @@ function TextoRoadmap({ texto }: TextoRoadmapProps) {
                 text-black
                 font-['Lexend_Deca']
                 font-normal
-                leading-[1.8]
+                text-lg
+                md:text-xl
+                leading-relaxed
                 max-w-120
 
                 md:max-w-176

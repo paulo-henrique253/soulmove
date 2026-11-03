@@ -74,7 +74,7 @@ function Index() {
           <h2 className="font-['Momo_Trust_Display'] text-2xl sm:text-4xl md:text-5xl font-black mb-2 bg-linear-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent mb-10">Mudar comportamentos</h2>
           
 
-          <p className="font-['Lexend_Deca'] text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
+          <p className="font-['Lexend_Deca'] text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             A SoulMove conecta tecnologia, sustentabilidade e comunidade para construir
             cidades mais inteligentes, acessíveis e sustentáveis.
           </p>

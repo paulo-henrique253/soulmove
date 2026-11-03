@@ -41,7 +41,7 @@ function Sobre() {
         </section>
         <section className="py-16 space-y-8">
           <div className="max-w-3xl mx-auto text-center space-y-4">
-            <h2 className="font-['Momo_Trust_Display'] text-3xl font-bold bg-linear-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent
+            <h2 className="font-['Momo_Trust_Display'] text-3xl md:text-4xl font-black bg-linear-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent
             mb-10">
             Uma nova forma de incentivar mobilidade consciente
             </h2>
