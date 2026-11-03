@@ -71,11 +71,11 @@ async function onSubmit(data: CadastroFormValues){
 
           <ContatoInput
             id="email"
-            label="Email"
+            label="E-mail"
             type="email"
-            placeholder="Digite seu email"
+            placeholder="Digite seu E-mail"
             {...register("email", {
-              required: "Insira seu email",
+              required: "Insira seu E-mail",
               pattern: {
                 value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
                 message: "Informe um e-mail válido",

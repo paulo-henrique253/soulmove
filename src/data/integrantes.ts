@@ -45,7 +45,7 @@ export const integrantes: Integrante[] = [
     foto: Felle,
     github: "https://github.com/lixzaura",
     linkedin: "https://www.linkedin.com/in/juliafreitasb/",
-    sobre: "Sou ilustradora e atualmente estou entrando no ramo da programação, estou gostando muito de estudar e pretendo focar totalmente em backend.",
+    sobre: "Sou ilustradora e atualmente estou entrando no ramo da programação, estou gostando muito de estudar e pretendo focar totalmente em back-end.",
   },
   {
     nome: "Paulo Henrique",
@@ -55,7 +55,7 @@ export const integrantes: Integrante[] = [
     foto: Ph,
     github: "https://github.com/paulo-henrique253",
     linkedin: "https://www.linkedin.com/in/paulo-henrique-gomes-gon%C3%A7alves-aa04b5272/",
-    sobre: "Gosto de estudar programação e outros idiomas. Atualmente estou focando em backend e em estudar japonês.",
+    sobre: "Gosto de estudar programação e outros idiomas. Atualmente estou focando em back-end e em estudar japonês.",
   },
   {
     nome: "Danielle Fernanda",
@@ -65,6 +65,6 @@ export const integrantes: Integrante[] = [
     foto: Dani,
     github: "https://github.com/daniellekgn",
     linkedin: "https://www.linkedin.com/in/daniellekagan/",
-    sobre: "Tenho interesse em tecnologia, desenvolvimento de interfaces e UX-UI. Atualmente também estou gostando bastante de trabalhar com Back-end.",
+    sobre: "Tenho interesse em tecnologia, desenvolvimento de interfaces e UX-UI. Atualmente também estou gostando bastante de trabalhar com back-end.",
   },
 ];

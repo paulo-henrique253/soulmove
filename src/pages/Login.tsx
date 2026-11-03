@@ -50,11 +50,11 @@ function Login() {
           <div className="flex flex-col gap-4">
               <ContatoInput
                 id="email"
-                label="Email"
+                label="E-mail"
                 type="email"
-                placeholder="Digite seu email"
+                placeholder="Digite seu E-mail"
                 {...register("email", {
-                  required: "Insira seu email",
+                  required: "Insira seu E-mail",
                 })}
               />
               {errors.email?.message && (

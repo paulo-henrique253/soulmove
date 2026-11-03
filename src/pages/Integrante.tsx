@@ -54,7 +54,7 @@ function Integrante(){
                         <img src={imgLinkedin} alt="Logo do Linkedin" className="h-6 w-6" />
                     </a>
 
-                    <button className="w-full font-['Lexend_Deca'] flex justify-center items-center bg-indigo-600/30 rounded-xl h-12 py-1 text-white" onClick={() => navigate("/integrantes")}>
+                    <button className="w-full font-['Lexend_Deca'] flex justify-center items-center bg-indigo-600/30 rounded-xl h-12 py-1 text-white cursor-pointer" onClick={() => navigate("/integrantes")}>
                         Voltar para integrantes
                     </button>
 
