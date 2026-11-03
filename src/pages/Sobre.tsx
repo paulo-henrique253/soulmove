@@ -8,7 +8,7 @@ import bilheteUnicoImg from "../assets/bilhete_unico.png";
 function Sobre() {
   return (
       <main className="flex-1 w-full max-w-6xl mx-auto px-6 py-12 md:py-20">
-        <TituloPagina texto="Mobilidade sustentável começa com escolhas conscientes"/>
+        <TituloPagina texto={"Mobilidade sustentável começa\ncom escolhas conscientes"}/>
         <section className="flex flex-col md:flex-row items-center gap-12 py-12">
           <div className="flex-1 space-y-6">
             <p className="font-['Lexend_Deca'] text-lg leading-relaxed">
