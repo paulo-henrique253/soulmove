@@ -31,7 +31,7 @@ function CalculadoraCarbono() {
       </form>
 
       {resultado && (
-        <div className="font-['Lexend_Deca'] flex items-center justify-center gap-3 text-2xl font-bold text-sky-700">
+        <div className="font-['Lexend_Deca'] flex items-center justify-center gap-3 text-2xl font-bold text-indigo-600">
           <h2>Resultado:</h2>
           <p>{resultado}</p>
         </div>
