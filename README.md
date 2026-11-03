@@ -13,6 +13,37 @@ Além disso, nossa equipe desenvolveu um site (tema deste README) para apresenta
 
 ===================================================
 
+## Links do projeto:
+- **Repositório:** https://github.com/paulo-henrique253/soulmove-front-3
+- **Vídeo:** colocar link do video
+- **Vercel:** https://soulmove-xi.vercel.app/
+- **API:** https://soulmove-java-3.onrender.com
+
+===================================================
+
+## Como rodar o projeto:
+Crie um arquivo `.env` na raiz do projeto com o endereço da API:
+
+```
+VITE_API_URL=https://soulmove-java-3.onrender.com
+```
+
+Depois, no terminal:
+
+```
+npm install
+npm run dev
+```
+
+Para gerar e visualizar a build de produção:
+
+```
+npm run build
+npm run preview
+```
+
+===================================================
+
 ## Tecnologias utilizadas:
 
 ### Principal:
@@ -45,8 +76,16 @@ A navegação entre páginas deixou de depender de arquivos `.html` separados e 
 - `/roadmap` - Visão de futuro do projeto;
 - `/integrantes` - Integrantes (lista da equipe);
 - `/integrantes/:slug` - página individual de cada integrante, gerada dinamicamente a partir do slug;
-- `/faq` -Perguntas frequentes;
-- `/contato` - Contato com a equipe do projeto.
+- `/faq` - Perguntas frequentes;
+- `/contato` - Contato com a equipe do projeto;
+- `/login` - Login do administrador;
+- `/appInicio`, `/appCalculadora`, `/appCarteira`, `/appMissoes`, `/appPerfil`, `/appRecarga`, `/appConquistas` - telas do aplicativo SoulMove;
+- `/appMissoes/:slug` - detalhe de cada missão, gerado a partir do parâmetro da rota;
+- `/appLogin` e `/appCadastro` - login e cadastro dos usuários do aplicativo;
+- `/adm` - painel do administrador, com as rotas `/adm/missoes`, `/adm/conquistas`, `/adm/novaMissao` e `/adm/novaConquista`;
+- `/adm/missoes/:missaoId` e `/adm/conquistas/:conquistaId` - edição de cada missão e conquista.
+
+As telas do aplicativo usam o `AppLayout`, dentro do `MainLayout`.
 
 Todas as rotas compartilham o mesmo layout (`MainLayout`), que renderiza o `Header`, o conteúdo da página/main (utilizando o `Outlet`) e o `Footer`.
 
@@ -83,6 +122,18 @@ Com a migração para React + Vite, a estrutura de pastas também mudou. O proje
 
 - `src/layouts/`: contém o `MainLayout.tsx`, responsável por estruturar o `Header`, o conteúdo de cada página e o `Footer` em todas as rotas.
 
+- `src/pages/app/`: telas do aplicativo SoulMove (início, calculadora, carteira, missões, perfil, recarga, conquistas, login e cadastro);
+
+- `src/pages/adm/`: painel do administrador (cadastro, lista e edição de missões e conquistas);
+
+- `src/service/`: funções que fazem as requisições à API (`missao.ts`, `conquista.ts`, `usuario.ts`, `viagem.ts` e `recarga.ts`);
+
+- `src/types/`: tipos TypeScript dos dados que vêm da API;
+
+- `src/contexts/` e `src/hooks/`: `UsuarioContext`, `UsuarioProvider` e `useUsuario`, que guardam o usuário logado;
+
+- `vercel.json`: redireciona todas as rotas para o `index.html`, para a SPA funcionar na Vercel.
+
 - `src/data/`: arquivos de dados tipados em TypeScript que alimentam os componentes.
 
 - `src/assets/`: imagens e ícones utilizados no site.
@@ -97,47 +148,67 @@ Com a migração para React + Vite, a estrutura de pastas também mudou. O proje
 
 ===================================================
 
-## Como rodar o projeto:
+## Imagens do projeto
 
-# instalar as dependências
-npm install
+### Telas do aplicativo
 
-# rodar o servidor de desenvolvimento
-npm run dev
+<table align="center">
+  <tr>
+    <td align="center"><img src="src/assets/layout_sm_carteira.png" width="170" alt="Tela da carteira"><br><b>Carteira</b></td>
+    <td align="center"><img src="src/assets/layout_sm_missoes.png" width="170" alt="Tela de missões"><br><b>Missões</b></td>
+    <td align="center"><img src="src/assets/layout_sm_calculadora.png" width="170" alt="Tela da calculadora de carbono"><br><b>Calculadora</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="src/assets/layout_sm_bilhetagem.png" width="170" alt="Tela de recarga do bilhete único"><br><b>Recarga</b></td>
+    <td align="center"><img src="src/assets/layout_sm_comprovacao.png" width="170" alt="Tela de comprovação de missão"><br><b>Comprovação</b></td>
+    <td align="center"><img src="src/assets/tela_conquistas.png" width="170" alt="Tela de conquistas"><br><b>Conquistas</b></td>
+  </tr>
+</table>
 
-# gerar a build de produção
-npm run build
-
-# visualizar a build de produção
-npm run preview
+### Roadmap
+<img src="src/assets/roadmap_soulmove.png" width="600" alt="Roadmap da SoulMove">
 
 ===================================================
 
 ## Autores e créditos:
-Enzo Zeni - 1TDSPK - RM570653
+<img src="src/assets/zeni.png" width="120" alt="Foto Enzo Zeni">
+
+**Enzo Zeni - 1TDSPK - RM570653**
   - Linkedin: https://www.linkedin.com/in/enzo-fachinelli-zeni-687a873b3
   - Github: https://github.com/F-Zeni
 
-Jacqueline Lotufo - 1TDSPK - RM571390
+<br>
+
+<img src="src/assets/jac.png" width="120" alt="Foto Jacqueline Lotufo">
+
+**Jacqueline Lotufo - 1TDSPK - RM571390**
   - Linkedin: https://br.linkedin.com/in/jacqueline-lotufo
   - Github: https://github.com/jacquelot
 
-Julia de Freitas - 1TDSPK - RM569098
+<br>
+
+<img src="src/assets/ju.png" width="120" alt="Foto Julia de Freitas">
+
+**Julia de Freitas - 1TDSPK - RM569098**
   - Linkedin: https://www.linkedin.com/in/lixzaura
   - Github: https://github.com/lixzaura
 
-Paulo Henrique - 1TDSPK - RM573806
+<br>
+
+<img src="src/assets/ph.png" width="120" alt="Foto Paulo Henrique">
+
+**Paulo Henrique - 1TDSPK - RM573806**
   - Linkedin: https://www.linkedin.com/in/paulo-henrique-gomes-gonçalves-aa04b5272/
   - Github: https://github.com/paulo-henrique253
 
-Danielle Fernanda - 1TDSPK - RM569359
+<br>
+
+<img src="src/assets/dani.png" width="120" alt="Foto Danielle Kagan">
+
+**Danielle Kagan - 1TDSPK - RM569359**
   - Linkedin: https://www.linkedin.com/in/danielle-fernanda-kagan-9026b141b/
   - Github: https://github.com/daniellekgn
 
-===================================================
-
-## Link do repositório
-- [https://github.com/paulo-henrique253/soulmove-front-3](https://github.com/paulo-henrique253/soulmove-front-3)
 
 ===================================================
 
