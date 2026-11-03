@@ -5,7 +5,7 @@ import roadmapSoulmove from "../assets/roadmap_soulmove.png";
 
 function Roadmap() {
     return (
-        <main className="w-full px-6 py-12">
+        <main className="w-full px-6 py-12 md:py-20">
 
             <TituloPagina texto="Nossa visão de futuro" />
 

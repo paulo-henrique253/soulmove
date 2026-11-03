@@ -4,7 +4,7 @@ import { faqData } from "../data/faq";
 
 function Faq(){
     return(
-        <main className="bg-white py-12">
+        <main className="w-full px-6 py-12 md:py-20">
             <TituloPagina texto="Perguntas Frequentes"/>
 
             <section className="mx-auto flex flex-row flex-wrap px-6 gap-8 md:gap-12.5 justify-center">
