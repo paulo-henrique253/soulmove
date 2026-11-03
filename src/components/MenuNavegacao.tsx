@@ -40,7 +40,7 @@ function MenuNavegacao({ trocarMenu, menuAberto = false }: MenuNavegacaoProps) {
                 justify-center
                 gap-5
                 p-6
-                bg-indigo-600
+                bg-indigo-600/90
                 overflow-y-auto
 
                 md:static
