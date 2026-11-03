@@ -72,7 +72,7 @@ function Index() {
 
         <section className="text-center py-20 px-6">
           <h2 className="font-['Momo_Trust_Display'] text-2xl sm:text-4xl md:text-5xl font-black mb-2 bg-linear-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent">Mensurar impactos</h2>
-          <h2 className="font-['Momo_Trust_Display'] text-2xl sm:text-4xl md:text-5xl font-black mb-2 bg-linear-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent">Mudar comportamentos</h2>
+          <h2 className="font-['Momo_Trust_Display'] text-2xl sm:text-4xl md:text-5xl font-black mb-2 bg-linear-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent mb-10">Mudar comportamentos</h2>
           
 
           <p className="font-['Lexend_Deca'] text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
