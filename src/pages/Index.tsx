@@ -88,6 +88,7 @@ function Index() {
             <div>
               <Link
                 to="/sobre"
+                onClick={() => window.scrollTo(0, 0)}
                 className="font-['Lexend_Deca'] inline-block px-8 py-4 bg-linear-to-r from-indigo-500 to-sky-400 text-white font-bold rounded-[14px]"
               >
                 Descubra a Plataforma
