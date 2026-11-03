@@ -73,9 +73,9 @@ async function onSubmit(data: CadastroFormValues){
             id="email"
             label="E-mail"
             type="email"
-            placeholder="Digite seu E-mail"
+            placeholder="Digite seu e-mail"
             {...register("email", {
-              required: "Insira seu E-mail",
+              required: "Insira seu e-mail",
               pattern: {
                 value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
                 message: "Informe um e-mail válido",

@@ -58,7 +58,7 @@ function Contato() {
                 required: "Informe seu e-mail.",
                 pattern: {
                   value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                  message: "Informe um e-mail válido.",
+                  message: "Informe um E-mail válido.",
                 },
               })}
             />
