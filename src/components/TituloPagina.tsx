@@ -10,8 +10,8 @@ function TituloPagina({ texto }: TituloPaginaProps) {
                     md:text-5xl
                     font-extrabold
                     text-center 
-                    text-sky-400 
-                    mb-16"
+                    bg-linear-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent
+            mb-16"
         >
             {texto}
         </h1>
