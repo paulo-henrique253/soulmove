@@ -15,7 +15,7 @@ Além disso, nossa equipe desenvolveu um site (tema deste README) para apresenta
 
 ## Links do projeto:
 - **Repositório:** https://github.com/paulo-henrique253/soulmove-front-3
-- **Vídeo:** colocar link do video
+- **Vídeo:** https://youtu.be/TW6Z4w18r3I
 - **Vercel:** https://soulmove-xi.vercel.app/
 - **API:** https://soulmove-java-3.onrender.com
 
