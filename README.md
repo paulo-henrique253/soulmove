@@ -190,8 +190,8 @@ Com a migração para React + Vite, a estrutura de pastas também mudou. O proje
 <img src="src/assets/ju.png" width="120" alt="Foto Julia de Freitas">
 
 **Julia de Freitas - 1TDSPK - RM569098**
-  - Linkedin: https://www.linkedin.com/in/lixzaura
-  - Github: https://github.com/lixzaura
+  - Linkedin: https://www.linkedin.com/in/freitasbdev
+  - Github: https://github.com/freitasbdev
 
 <br>
 
